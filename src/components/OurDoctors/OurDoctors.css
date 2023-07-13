@@ -1,0 +1,57 @@
+.ourDoctors-container {
+  margin-top: 80px;
+  height: 705.37134px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.ourDoctors-top h2 {
+  color: #000;
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.ourDoctors-top p {
+  color: #464949;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  width: 975px;
+  margin-bottom: 40px;
+}
+
+.ourDoctors-card-wrapper {
+  display: flex;
+  gap: 50px;
+}
+
+.ourDoctor-card {
+  width: 250px;
+  height: 404.37137px;
+  border-radius: 12.279px;
+  border: 0.614px solid var(--light-grey, #939393);
+  box-shadow: 1.2278718948364258px 4.29755163192749px 10.436910629272461px 0px
+    rgba(0, 94, 93, 0.09);
+
+  cursor: pointer;
+}
+
+.ourDoctor-card img {
+  width: 250px;
+  height: 325.763px;
+  border-radius: 12.279px 12.279px 0px 0px;
+  margin-bottom: 12.28px;
+}
+
+.ourDoctor-card-detail h3 {
+  /* font-size: 35px; */
+  /* font-weight: 500; */
+  margin-bottom: 4.91px;
+}
+.ourDoctor-card-detail p {
+  color: #464949;
+  margin-bottom: 18.42px;
+}

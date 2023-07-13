@@ -1,0 +1,66 @@
+:root {
+  --green: #005e5d;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 90px;
+  width: 100%;
+  padding: 0px 20px 0px 50px;
+  background: var(--white);
+
+  position: sticky;
+  top: 0;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-right: 80px;
+  float: right;
+}
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  padding: 3px 12.559px 3px 11.441px;
+}
+
+nav li a {
+  font-size: 20px;
+  color: var(--black);
+  font-weight: 400;
+}
+
+nav .links {
+  margin-left: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+nav #login {
+  text-align: center;
+  width: 128px;
+  padding: 8px 30px;
+  border-radius: 10px;
+  color: var(--green);
+  border: 1px solid var(--green);
+}
+
+nav #signup {
+  text-align: center;
+  width: 128px;
+  padding: 8px 30px;
+  border-radius: 10px;
+  color: var(--white);
+  border: 1px solid var(--green);
+  background-color: var(--green);
+}
