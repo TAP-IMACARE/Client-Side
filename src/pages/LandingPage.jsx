@@ -5,7 +5,7 @@ import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 import Hero from "../components/Hero/Hero";
 import Footer from "../components/Footer/Footer";
 
-const Homepage = () => {
+const LandingPage = () => {
   return (
     <>
       <Header />
@@ -18,4 +18,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default LandingPage;
