@@ -4,51 +4,73 @@
   --black: #000000;
 }
 
+.active {
+  color: var(--green);
+  font-weight: 600;
+}
 .header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 90px;
-  width: 100%;
-  padding: 0px 20px 0px 50px;
+  height: 80px;
   background: var(--white);
 
   position: sticky;
   top: 0;
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
   z-index: 999;
+  overflow: hidden;
 }
-
+.header-container {
+  padding: 0px 70px 0px 30px;
+  margin: 0 auto;
+  height: 100%;
+  max-width: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-container img {
+  height: 80px;
+}
+.header-container .hamburger-menu {
+  display: none;
+  position: relative;
+  width: 28px;
+  height: 200px;
+}
+.header-container .hamburger-menu img {
+  width: 28px;
+  height: 170px;
+  position: absolute;
+  right: 4.438px;
+  top: 0.9rem;
+  right: 0rem;
+}
 nav {
   display: flex;
   align-items: center;
-  gap: 40px;
-  margin-right: 80px;
-  float: right;
+  gap: 65px;
 }
 nav ul {
   display: flex;
 }
 
 nav ul li {
-  padding: 3px 12.559px 3px 11.441px;
+  padding: 0.6rem;
 }
 
 nav li a {
   font-size: 20px;
   color: var(--black);
   font-weight: 400;
+  white-space: nowrap;
 }
 
 nav .links {
-  margin-left: 10px;
-  display: flex;
-  gap: 10px;
+  white-space: nowrap;
 }
 
 nav #login {
+  margin-right: 1rem;
   text-align: center;
-  width: 128px;
   padding: 8px 30px;
   border-radius: 10px;
   color: var(--green);
@@ -57,10 +79,24 @@ nav #login {
 
 nav #signup {
   text-align: center;
-  width: 128px;
   padding: 8px 30px;
   border-radius: 10px;
   color: var(--white);
   border: 1px solid var(--green);
   background-color: var(--green);
+}
+
+@media all and (max-width: 950px) {
+  nav {
+    display: none;
+  }
+  .header-container .hamburger-menu {
+    display: block;
+    /* padding: 0px 25px 0px 0px; */
+  }
+}
+@media all and (max-width: 470px) {
+  .header-container {
+    padding: 0px 25px 0px 0px;
+  }
 }
