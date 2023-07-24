@@ -25,7 +25,7 @@ const ScheduleAppointment = () => {
             <h3>Current Patient</h3>
             <p>Already have an account? Log in to book an appointment</p>
 
-            <Link to="#">
+            <Link to={"/login"}>
               <button>Log in</button>
             </Link>
           </div>
@@ -34,7 +34,7 @@ const ScheduleAppointment = () => {
             <h3>New Patient</h3>
             <p>Don’t have an account? Sign Up to book an appointment</p>
 
-            <Link to="#">
+            <Link to={"/signup"}>
               <button>Sign Up</button>
             </Link>
           </div>

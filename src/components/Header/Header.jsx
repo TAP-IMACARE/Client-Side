@@ -29,10 +29,10 @@ const Header = () => {
           </ul>
 
           <div className="links">
-            <Link to={"#"} id="login">
+            <Link to={"login"} id="login">
               Log in
             </Link>
-            <Link to={"#"} id="signup">
+            <Link to={"signup"} id="signup">
               Sign Up
             </Link>
           </div>
