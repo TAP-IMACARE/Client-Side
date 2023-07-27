@@ -8,6 +8,13 @@
 html {
   scroll-behavior: smooth;
 }
+:root {
+  --green: #005e5d;
+  --white: #ffffff;
+  --black: #000000;
+  --grey: #464949;
+  --lighter-grey: #d1d1d1;
+}
 
 body {
   font-family: "Roboto", sans-serif;

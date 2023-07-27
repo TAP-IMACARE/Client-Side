@@ -18,73 +18,85 @@ const OurServices = () => {
       </div>
 
       <div className="ourService-card-wrapper">
-        <div className="ourService-card">
-          <div className="ourService-card-image">
-            <img src={pharmacyIcon} alt="icon" />
-          </div>
+        <div className="ourService-card-container">
+          <div className="ourService-card">
+            <div className="ourService-card-image">
+              <img src={pharmacyIcon} alt="icon" />
+            </div>
 
-          <h4>Pharmacy</h4>
-          <p>Dispensing of medications and pharmaceutical consultations</p>
+            <h4>Pharmacy</h4>
+            <p>Dispensing of medications and pharmaceutical consultations</p>
+          </div>
         </div>
 
-        <div className="ourService-card">
-          <div className="ourService-card-image">
-            <img src={rehabIcon} alt="icon" />
-          </div>
+        <div className="ourService-card-container">
+          <div className="ourService-card">
+            <div className="ourService-card-image">
+              <img src={rehabIcon} alt="icon" />
+            </div>
 
-          <h4>Rehabilitation</h4>
-          <p>
-            Physical, occupational, and speech therapy for patients recovering
-            from injuries or surgeries.
-          </p>
+            <h4>Rehabilitation</h4>
+            <p>
+              Physical, occupational, and speech therapy for patients recovering
+              from injuries or surgeries.
+            </p>
+          </div>
         </div>
 
-        <div className="ourService-card">
-          <div className="ourService-card-image">
-            <img src={maternityIcon} alt="icon" />
-          </div>
+        <div className="ourService-card-container">
+          <div className="ourService-card">
+            <div className="ourService-card-image">
+              <img src={maternityIcon} alt="icon" />
+            </div>
 
-          <h4>Maternity Care</h4>
-          <p>
-            Prenatal care, labor and delivery, postpartum care, and specialized
-            care for newborns.
-          </p>
+            <h4>Maternity Care</h4>
+            <p>
+              Prenatal care, labor and delivery, postpartum care, and
+              specialized care for newborns.
+            </p>
+          </div>
         </div>
 
-        <div className="ourService-card">
-          <div className="ourService-card-image">
-            <img src={labIcon} alt="icon" />
-          </div>
+        <div className="ourService-card-container">
+          <div className="ourService-card">
+            <div className="ourService-card-image">
+              <img src={labIcon} alt="icon" />
+            </div>
 
-          <h4>Laboratory</h4>
-          <p>
-            Comprehensive diagnostic testing, including blood work, pathology,
-            and microbiology.
-          </p>
+            <h4>Laboratory</h4>
+            <p>
+              Comprehensive diagnostic testing, including blood work, pathology,
+              and microbiology.
+            </p>
+          </div>
         </div>
 
-        <div className="ourService-card">
-          <div className="ourService-card-image">
-            <img src={emergencyIcon} alt="icon" />
-          </div>
+        <div className="ourService-card-container">
+          <div className="ourService-card">
+            <div className="ourService-card-image">
+              <img src={emergencyIcon} alt="icon" />
+            </div>
 
-          <h4>Emergency Care</h4>
-          <p>
-            Ambulance and paramedic services for on-site emergency response and
-            transportation to the hospital.
-          </p>
+            <h4>Emergency Care</h4>
+            <p>
+              Ambulance and paramedic services for on-site emergency response
+              and transportation to the hospital.
+            </p>
+          </div>
         </div>
 
-        <div className="ourService-card">
-          <div className="ourService-card-image">
-            <img src={intensiveCareIcon} alt="icon" />
-          </div>
+        <div className="ourService-card-container">
+          <div className="ourService-card">
+            <div className="ourService-card-image">
+              <img src={intensiveCareIcon} alt="icon" />
+            </div>
 
-          <h4>Intensive Care Units</h4>
-          <p>
-            Critical care services for patients with severe illnesses or
-            injuries.
-          </p>
+            <h4>Intensive Care Units</h4>
+            <p>
+              Critical care services for patients with severe illnesses or
+              injuries.
+            </p>
+          </div>
         </div>
       </div>
     </div>

@@ -35,40 +35,42 @@ const BookAppointment = () => {
 
   return (
     <div className="appointment">
-      <h2>Book an Appointment</h2>
+      <div className="appointment-container">
+        <h2>Book an Appointment</h2>
 
-      <form action="#" onSubmit={handleSubmit}>
-        <div className="form-control">
-          <input
-            type="text"
-            placeholder="Treatment or Specialist"
-            value={treatment}
-            onChange={(event) => setTreatment(event.target.value)}
-          />
-          <img src={searchIcon} alt="" />
-        </div>
+        <form action="#" onSubmit={handleSubmit}>
+          <div className="form-control">
+            <input
+              type="text"
+              placeholder="Treatment or Specialist"
+              value={treatment}
+              onChange={(event) => setTreatment(event.target.value)}
+            />
+            <img src={searchIcon} alt="" />
+          </div>
 
-        <div className="form-control">
-          <input
-            type="address"
-            placeholder="Location"
-            value={location}
-            onChange={(event) => setLocation(event.target.value)}
-          />
-          <img src={locationIcon} alt="" />
-        </div>
+          <div className="form-control">
+            <input
+              type="address"
+              placeholder="Location"
+              value={location}
+              onChange={(event) => setLocation(event.target.value)}
+            />
+            <img src={locationIcon} alt="" />
+          </div>
 
-        <div className="form-control">
-          <input
-            type="date"
-            placeholder=""
-            value={date}
-            onChange={(event) => setDate(event.target.value)}
-          />
-        </div>
+          <div className="form-control">
+            <input
+              type="date"
+              placeholder=""
+              value={date}
+              onChange={(event) => setDate(event.target.value)}
+            />
+          </div>
 
-        <button type="submit">Book Now</button>
-      </form>
+          <button type="submit">Book Now</button>
+        </form>
+      </div>
     </div>
   );
 };

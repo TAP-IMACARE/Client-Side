@@ -1,20 +1,23 @@
 .appointment {
+  /* position: relative; */
+}
+.appointment-container {
   background-color: #ffff;
   display: flex;
-  height: 195.52266px;
-  width: 1050px;
-  padding: 32.761px 28.666px;
+  height: 190px;
+  width: 1100px;
   flex-direction: column;
-  gap: 40px;
+  gap: 20px;
   border-radius: 6.552px;
   box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.3),
     0px 1px 2px 0px rgba(0, 0, 0, 0.3);
 
-  position: absolute;
-  left: 106px;
-  top: 593px;
+  position: relative;
+  top: -80px;
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 50px;
 }
-
 form {
   display: flex;
   gap: 20px;
@@ -25,7 +28,7 @@ form .form-control {
   display: flex;
   justify-content: space-between;
   flex: 1 0 0;
-  height: 54.875px;
+  height: 54px;
   width: 310.414px;
   padding: 14.743px 12.285px;
   border-radius: 12.285px;
@@ -60,4 +63,42 @@ form button {
   padding: 16px 20px;
   border-radius: 10px;
   cursor: pointer;
+}
+@media all and (max-width: 1200px) {
+  .appointment-container {
+    width: 900px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .appointment-container {
+    top: -60px;
+    height: 400px;
+    width: 430px;
+  }
+  .appointment-container h2 {
+    /* margin-top: 25px; */
+    margin-top: -10px;
+    font-size: 18px;
+  }
+  form {
+    flex-direction: column;
+    /* gap: 20px; */
+  }
+
+  form button {
+    margin-top: 10px;
+    width: 310.414px;
+  }
+}
+@media all and (max-width: 490px) {
+  .appointment-container {
+    height: 400px;
+    width: 80%;
+    padding: 35px;
+  }
+  form .form-control,
+  form button {
+    width: 100%;
+  }
 }

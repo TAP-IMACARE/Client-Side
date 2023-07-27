@@ -15,6 +15,10 @@
 }
 
 .ourService-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: #fff;
   text-align: center;
 }
@@ -28,24 +32,39 @@
   font-weight: 400;
   line-height: 25px;
   font-size: 18px;
-  margin-bottom: 35px;
+  margin-bottom: 70px;
 }
 
 .ourService-card-wrapper {
-  max-width: 857px;
+  /* max-width: 857px; */
+  max-width: 920px;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 55px;
+  gap: 50px;
 }
-
+.ourService-card-wrapper .ourService-card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 255px;
+  height: 255px;
+}
 .ourService-card {
   border-radius: 25px;
   background: #fff;
   box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
   width: 242px;
-  max-height: 235px;
+  height: 235px;
   padding: 30px 25px;
+  margin-bottom: 70px;
   cursor: pointer;
+}
+.ourService-card:hover {
+  width: 252px;
+  height: 255px;
+  transition: all 0.35s ease-in-out;
 }
 
 .ourService-card-image {
@@ -77,4 +96,74 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
+}
+
+@media all and (max-width: 850px) {
+  .ourService-container {
+    height: 100%;
+  }
+  .ourService-top {
+    margin-top: 20px;
+  }
+  .ourService-top p {
+    width: 90%;
+  }
+  .ourService-card-wrapper {
+    gap: 15px;
+  }
+
+  .ourService-card {
+    border-radius: 20px;
+    width: 230px;
+    max-height: 280px;
+    padding: 30px 25px;
+  }
+  .ourService-card:hover {
+    width: 280px;
+    height: 280px;
+  }
+}
+@media all and (max-width: 550px) {
+  .ourService-top h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .ourService-top p {
+    font-size: 14px;
+    line-height: normal;
+  }
+  .ourService-card-wrapper {
+    gap: 10px;
+  }
+  .ourService-card-wrapper .ourService-card-container {
+    width: 200px;
+    height: 200px;
+  }
+  .ourService-card {
+    width: 187px;
+    max-height: 185px;
+    padding: 20px 15px;
+  }
+
+  .ourService-card-image {
+    width: 35px;
+    height: 35px;
+
+    margin-bottom: 20px;
+  }
+  .ourService-card img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .ourService-card h4 {
+    font-size: 15px;
+    font-weight: 500;
+  }
+
+  .ourService-card p {
+    font-size: 12px;
+    line-height: 15px;
+  }
 }

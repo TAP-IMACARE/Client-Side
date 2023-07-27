@@ -8,7 +8,9 @@ const OurDoctors = () => {
   return (
     <div className="ourDoctors-container">
       <div className="ourDoctors-top">
-        <h2>Meet Our Specialist Doctors</h2>
+        <h2>
+          Meet Our <span style={{ color: "#005E5D" }}>Specialist</span> Doctors
+        </h2>
         <p>
           Get in touch with our team of highly skilled and compassionate doctors
           who are dedicated to providing exceptional healthcare services to
@@ -34,7 +36,7 @@ const OurDoctors = () => {
           </div>
         </div>
 
-        <div className="ourDoctor-card">
+        <div className="ourDoctor-card" id="hidden">
           <img src={DrImg3} alt="doctor" />
 
           <div className="ourDoctor-card-detail">
@@ -43,7 +45,7 @@ const OurDoctors = () => {
           </div>
         </div>
 
-        <div className="ourDoctor-card">
+        <div className="ourDoctor-card doc-3" id="hidden">
           <img src={DrImg4} alt="doctor" />
 
           <div className="ourDoctor-card-detail">

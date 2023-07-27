@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./WhyChooseUs.css";
 import arrowUpIcon from "../../assets/arrowUp-icon.svg";
+import arrowDownIcon from "../../assets/arrowDown-icon.svg";
 import image1 from "../../assets/image1.png";
 import image2 from "../../assets/image2.png";
 import image3 from "../../assets/image3.png";
@@ -32,7 +33,7 @@ const WhyChooseUs = () => {
   const [selected, setSelected] = useState(0);
 
   const handleToggle = (i) => {
-    return i;
+    setSelected(i);
   };
   return (
     <div className="whyChooseUs-container">
@@ -44,44 +45,36 @@ const WhyChooseUs = () => {
           choice for exceptional healthcare
         </p>
       </div>
-      {/* {data.map((item, i) => (
-        <div className="whyChooseUs_bottom-content" key={i}>
-          <div className="whyChooseUse_left-content">
-            <div
-              className="whyChooseUs_left-content-header"
-              onClick={() => handleToggle(i)}
-            >
-              <h3>{item.heading}</h3>
-              <img src={arrowUpIcon} alt="icon" id="arrowUp" />
-            </div>
-            <div className="whyChooseUs_content">
-              <p>{item.body}</p>
-            </div>
-          </div>
-
-          <div className="right-content">
-            <img src={item.poster} alt="image" />
-          </div>
-        </div>
-      ))} */}
 
       <div className="bottom-content">
         <div className="left-content-wrapper">
-          <div className="active-content">
-            <div className="content-header" id="content-header1">
-              <h3>Commitment to Excellence</h3>
-              <img src={arrowUpIcon} alt="icon" id="arrowUp" />
-            </div>
+          {data.map((item, i) => (
+            <div key={i}>
+              <div
+                className={
+                  selected === i ? "active-content" : "inactive-content"
+                }
+              >
+                <div
+                  className="content-header"
+                  id="content-header1"
+                  onClick={() => handleToggle(i)}
+                >
+                  <h3>{item.heading}</h3>
+                  <img
+                    src={selected === i ? arrowUpIcon : arrowDownIcon}
+                    alt="icon"
+                    id="arrowUp"
+                  />
+                </div>
 
-            <div className="content-body">
-              <p>
-                Our dedicated team of skilled healthcare professionals,
-                including renowned doctors, nurses, and support staff, are
-                driven by a passion for excellence.
-              </p>
+                <div className={selected === i ? "content-body" : "inactive"}>
+                  <p>{item.body}</p>
+                </div>
+              </div>
             </div>
-          </div>
-
+          ))}
+          {/* 
           <div className="inactive-content">
             <div className="content-header" id="content-header1">
               <h3>Comprehensive Medical Services</h3>
@@ -95,11 +88,11 @@ const WhyChooseUs = () => {
               <h3>Patient-Centered Approach</h3>
               <img src={arrowUpIcon} alt="icon" id="arrowUp" />
             </div>
-          </div>
+          </div> */}
         </div>
 
         <div className="right-content">
-          <img src={image1} alt="image" />
+          <img src={data[selected].poster} alt="image" />
         </div>
       </div>
     </div>
