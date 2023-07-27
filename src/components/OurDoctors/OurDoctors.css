@@ -53,6 +53,11 @@
   margin-bottom: 18px;
 }
 
+@media all and (max-width: 1154px) {
+  .ourDoctors-card-wrapper {
+    gap: 0.8rem;
+  }
+}
 @media all and (max-width: 1024px) {
   .ourDoctors-card-wrapper .doc-3 {
     display: none;
