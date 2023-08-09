@@ -74,21 +74,6 @@ const WhyChooseUs = () => {
               </div>
             </div>
           ))}
-          {/* 
-          <div className="inactive-content">
-            <div className="content-header" id="content-header1">
-              <h3>Comprehensive Medical Services</h3>
-              <img src={arrowUpIcon} alt="icon" id="arrowUp" />
-            </div>
-            <div className="content-header" id="content-header1">
-              <h3>Skilled and Compassionate Healthcare Professionals</h3>
-              <img src={arrowUpIcon} alt="icon" id="arrowUp" />
-            </div>
-            <div className="content-header" id="content-header1">
-              <h3>Patient-Centered Approach</h3>
-              <img src={arrowUpIcon} alt="icon" id="arrowUp" />
-            </div>
-          </div> */}
         </div>
 
         <div className="right-content">

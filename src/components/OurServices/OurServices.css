@@ -19,7 +19,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--white);
   text-align: center;
 }
 .ourService-top h2 {
@@ -36,7 +36,6 @@
 }
 
 .ourService-card-wrapper {
-  /* max-width: 857px; */
   max-width: 920px;
   display: flex;
   justify-content: center;
@@ -53,7 +52,7 @@
 }
 .ourService-card {
   border-radius: 25px;
-  background: #fff;
+  background: var(--white);
   box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
   width: 242px;
   height: 235px;
@@ -68,7 +67,7 @@
 }
 
 .ourService-card-image {
-  background-color: lightgray;
+  background-color: var(--light-grey);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,14 +84,14 @@
 }
 
 .ourService-card h4 {
-  color: #005e5d;
+  color: var(--green);
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 10px;
 }
 
 .ourService-card p {
-  color: #464949;
+  color: var(--grey);
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;

@@ -38,7 +38,6 @@ const MobileFooter = ({
   const [showList, setShowList] = useState(0);
   const show = (id) => {
     setShowList(id);
-    console.log(id, "cliked");
   };
   return (
     <div className="mobile-footer">

@@ -42,14 +42,28 @@
   margin-bottom: 18px;
 }
 .active-content {
-  max-height: 200px;
+  /* max-height: 200px; */
   width: 100%;
   border-radius: 10px;
   border: 1px solid var(--lighter-grey);
   padding: 20px 25px;
   margin-top: 15px;
   margin-bottom: 30px;
-  transition: all 0.75s ease-in-out;
+  overflow: hidden;
+  /* transition: all 0.75s ease-in-out; */
+  animation-name: animate2;
+  animation-duration: 0.35s;
+  animation-timing-function: linear;
+}
+@keyframes animate2 {
+  0% {
+    opacity: 0.5;
+    max-height: 50px;
+  }
+  100% {
+    opacity: 1;
+    max-height: 200px;
+  }
 }
 .active-content h3 {
   color: var(--green);
