@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+.login-container{
+    display:flex;
+    gap: 10px;
+}
+.login-form {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 80px 70px 80px;
+  }
+  
+.login-form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    gap: 6.478px;
+    margin-bottom: 32.39px;
+}
+.login-form-group input {
+    display: flex;
+    width: 441.298px;
+    padding: 24.292px 28.34px 24.292px 12.146px;
+    align-items: center;
+    gap: 16.194px;
+    border-radius: 6.478px;
+    border: 0.81px solid var(--light-grey, #939393);
+    background: var(--white, #FFF); 
+}
+.login-input-with-icon {
+    position: relative;
+}
+
+.login-input-with-icon .login-icon {
+    position: absolute;
+    top: 45%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 18.481px;
+    height: 14.785px;
+}
+
+.login-input-with-icon .login-visibility-icon {
+    position: absolute;
+    top: 45%;
+    right: 60px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 23.752px;
+    height: 21.377px; 
+}
+
+
+.login-input-with-icon input {
+    padding-left: 30px; 
+}
+
+#login-text{
+    margin-top: 5px;
+    color: var(--grey, #464949);
+
+/* small/body/regular/18 */
+font-size: 18px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+/* Styling for placeholder text */
+input::placeholder,
+textarea::placeholder {
+    color: var(--light-grey, #939393);
+    font-size: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 18.12px;
+}
+
+.login-form h1 {
+    color: var(--green, #005E5D);
+font-size: 40.486px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+margin-bottom: 0;
+}
+.login-form p {
+    margin-top: 0;
+}
+form{
+    margin-top: 48.58px;
+    display: flex;
+    flex-direction: column;
+}
+label{
+    color: var(--black, #000);
+font-size: 20.243px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+#login-unique-form{
+    border-radius: 6.478px;
+border: 0.81px solid var(--red, #BB0808);
+background: var(--white, #FFF);
+}
+.login-error{
+    color: var(--red, #BB0808);
+    
+    /* small/body/regular/14 */
+    font-size: 14px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 25px;
+}
+#login-error-icon{
+    width: 16.925px;
+    height: 16.925px;
+    margin-right: 10px;
+    margin-bottom: -5px;
+}
+
+.login-reminder{
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-family: Roboto;
+    font-style: normal;
+    line-height: normal;
+    margin-bottom: 50px;
+}
+.login-check-box {
+    display: flex;
+}
+#login-remember {
+    margin-right: 5px;
+    width: 12px;
+}
+.login-reminder label{
+    color: var(--grey, #464949 );
+font-weight: 400;
+font-size: 16px;
+}
+.login-reminder p {
+    color: var(--green, #005E5D);
+text-align: right;
+font-weight: 500;
+}
+.login-logging{
+    display: flex;
+width: 485px;
+padding: 24.3px 24.29px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 8.1px;
+background: var(--green, #005E5D);
+color: var(--white, #FFF);
+text-align: center;
+font-size: 25px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+margin-bottom: 40px;
+}
+.login-horizontal-lines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12.146px;
+    align-self: stretch;
+}
+.login-or-text {
+    display: flex;
+    align-items: center;
+    color: var(--light-grey, #939393);
+    text-align: center;
+    font-size: 18px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    justify-content: center;
+    padding: 0 10px;
+  }
+.login-horizontal-lines span{
+    width: 202.43px;
+    height: 1.215px;
+    flex-grow: 1;
+}
+#login-google-signin{
+    display: flex;
+    width: 485px;
+    padding: 20px 24.292px;
+    justify-content: center;
+    align-items: center;
+    gap: 8.097px;
+    align-self: stretch;
+    border-radius: 8.097px;
+    border: 0.81px solid var(--light-grey, #939393);
+    background: var(--white, #FFF);
+    margin-bottom:80px;
+    margin-top: 60px;
+    /*typography*/
+    color: var(--light-grey, #939393);
+text-align: center;
+font-size: 20.243px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.login-account-p{
+    display: inline;
+    text-align: center;
+    align-items: center;
+    color: var(--grey, #464949);
+    font-size: 20px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.login-account-p span{
+    color: var(--green, #005E5D);
+}
+.login-lines {
+    display: flex;
+    /* border: 1px solid red ; */
+}
+.login-lines hr{
+    width: 500px;
+}
+
+.login-medic-lady{
+    background: linear-gradient(180deg, rgba(0, 94, 93, 0.65) 0%, rgba(0, 16, 16, 0.08) 19.27%, rgba(0, 14, 14, 0.20) 33.32%, rgba(0, 11, 11, 0.20) 33.33%, rgba(0, 0, 0, 0.65) 100%), url("../../assets/medic.lady.jpeg"), lightgray -551.982px 2px / 184.627% 100% no-repeat;
+    background-size: cover;
+    background-position: 80% 50%;
+    background-repeat: no-repeat;
+    display: flex;
+    padding: 62.261px 50px 35.578px 50px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 530px;
+    flex: 1 0 0;
+    align-self: stretch;    
+}
+.login-medic-lady h1{
+    display: flex;
+    width: 644px;
+    flex-direction: column;
+    justify-content: center; 
+    color: #FFF;
+
+/* Large/headline/bold/50 */
+font-size: 50px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 700;
+line-height: normal;  
+}
+.login-copyright{
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 106.734px;
+}
+.login-copyright span{
+    color: var(--white, #FFF);
+text-align: right;
+font-size: 16.01px;
+font-family: Roboto;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
