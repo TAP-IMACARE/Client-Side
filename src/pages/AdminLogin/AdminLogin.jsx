@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useNavigate } from "react-router-dom";
 import ImaImg from "../../assets/Imacare-5.png";
 import ImaGroup from "../../assets/Group.png";
-import ImaLock from "../../assets/lock.png";
+import ImaLock from "../../assets/lock copy.png";
 import LoginVisImg from "../../assets/visibility_off.png";
 import backgroundImg from "../../assets/admin-background.jpeg";
 import closeImage from "../../assets/close.png";
