@@ -5,6 +5,8 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ScheduleAppointment from "./pages/ScheduleAppointment/ScheduleAppointment.jsx";
 import Login from "./pages/Login/Login.jsx"
+import AdminLogin from "./pages/AdminLogin/AdminLogin.jsx";
+// import Signup from "./pages/Signup/Signup.jsx";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,10 @@ const router = createBrowserRouter([
     path: "login",
     element: <Login />,
   },
+  {
+    path: "admin-login",
+    element: <AdminLogin />,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
