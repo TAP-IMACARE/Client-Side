@@ -14,9 +14,9 @@ const listData = [
   },
   {
     header: "Resources",
-    item1: "Doctor Consultation",
+    item1: "Products",
     item2: "Careers",
-    item3: "News & Updates",
+    item3: "Blog",
   },
   {
     header: "Help",
@@ -86,7 +86,9 @@ const MobileFooter = ({
                 <ul
                   value={index}
                   className={
-                    showList === index ? "mobileFooter-mid-list" : "inactive"
+                    showList === index
+                      ? "mobileFooter-mid-list"
+                      : "mobileList-inactive-body"
                   }
                 >
                   <li>{list.item1}</li>

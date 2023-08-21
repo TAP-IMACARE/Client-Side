@@ -41,9 +41,9 @@ const Footer = () => {
           <ul className="resources">
             <h4>Resources</h4>
 
-            <li>Doctor Consultation</li>
+            <li>Products</li>
             <li>Careers</li>
-            <li>News & Updates</li>
+            <li>Blog</li>
           </ul>
 
           <ul className="help">
