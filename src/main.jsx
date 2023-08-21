@@ -8,6 +8,11 @@ import Home from "./pages/Dashboards/Home/Home.jsx";
 import Login from "./pages/Login/Login.jsx";
 // import Login from "./pages/Login/Login.jsx"
 import Signup from "./pages/Signup/Signup.jsx";
+import Overview from "./dashboards/Overview/Overview.jsx";
+import Appointment from "./dashboards/appointment/Appointment.jsx";
+import Prescription from "./dashboards/prescription/Prescription.jsx";
+import Payments from "./dashboards/payments/Payments.jsx";
+import Settings from "./dashboards/settings/Settings.jsx";
 
 const router = createBrowserRouter([
   {
@@ -27,8 +32,30 @@ const router = createBrowserRouter([
     element: <Signup />,
   },
   {
-    path: "home",
+    path: "dashboard",
     element: <Home />,
+    children: [
+      {
+        path: "/dashboard",
+        element: <Overview />,
+      },
+      {
+        path: "appointment",
+        element: <Appointment />,
+      },
+      {
+        path: "prescription",
+        element: <Prescription />,
+      },
+      {
+        path: "payments",
+        element: <Payments />,
+      },
+      {
+        path: "settings",
+        element: <Settings />,
+      },
+    ],
   },
 ]);
 
