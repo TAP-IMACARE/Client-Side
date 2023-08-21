@@ -1,0 +1,65 @@
+.PatientInfoContent-container {
+  background-color: var(--lightest-green);
+  min-height: 700px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 80px 120px 80px;
+}
+.PatientInfoContent-header {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  color: var(--black);
+}
+.PatientInfoContent-header h3 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.PatientInfoContent-header p {
+  font-size: 18px;
+  width: 75%;
+}
+
+.PatientInfoContent-content {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+/* LEFT COMPONENT */
+.PatientInfoContent-left {
+  width: 50%;
+}
+.PatientContent-left-container {
+  margin-left: 80px;
+}
+.PatientContent-left-container h4 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.PatientContent-left-container p {
+  width: 301px;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+.PatientContent-left-container #freeDemo-btn {
+  text-align: center;
+  padding: 10px 14px;
+  border-radius: 10px;
+  /* font-size: 18px; */
+  color: var(--white);
+  background: var(--green);
+}
+.PatientInfoContent-right {
+  width: 60%;
+}
+.PatientInfoContent-right img {
+  width: 100%;
+  transform: translateY(-10px);
+}
