@@ -153,6 +153,9 @@
     margin-top: 20px;
     cursor: pointer;
   }
+  .mobileList-inactive-body {
+    display: none;
+  }
 
   .mobileFooter-mid .mobileFooter-hr {
     width: 70%;
@@ -164,8 +167,8 @@
     overflow: hidden;
 
     animation-name: animate1;
-    animation-duration: 0.8s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 0.7s;
+    animation-timing-function: linear;
   }
   .mobileFooter-mid ul li {
     margin-bottom: 12px;

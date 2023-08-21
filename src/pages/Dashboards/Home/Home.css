@@ -59,10 +59,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 10px;
   width: 210px;
   height: 100px;
-  border-radius: 7.499px;
+  border-radius: 5px;
   border: 0.469px solid var(--lighter-grey);
   background: var(--white);
   box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
@@ -84,10 +84,10 @@
 
 .home-dasboard-left .upcomming-app {
   /* max-height: 300px; */
-  height: 250px;
+  height: 400px;
   padding: 20px 32.006px 18.289px 20px;
 
-  border-radius: 7.499px;
+  border-radius: 5px;
   border: 0.469px solid var(--lighter-grey);
   background: var(--white);
   box-shadow: 1.8746399879455566px 6.561239719390869px 15.934440612792969px 0px
@@ -101,8 +101,8 @@
 .home-dasboard-left .available-docs {
   padding: 20px;
 
-  border-radius: 9.373px;
-  border: 0.469px solid var(--lighter-grey, #d1d1d1);
+  border-radius: 5px;
+  border: 0.469px solid var(--lighter-grey);
 }
 .available-docs-header {
   display: flex;
@@ -152,7 +152,7 @@
   margin-top: 18px;
   height: 200px;
   width: 160px;
-  border-radius: 9.373px;
+  border-radius: 5px;
   border: 0.469px solid var(--lighter-grey);
   background: var(--white);
   box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
@@ -165,6 +165,11 @@
   align-items: center;
   gap: 20px;
   text-align: center;
+  cursor: pointer;
+}
+.available-doc:hover {
+  transform: scale(1.06);
+  transition: all 0.6s ease-in-out;
 }
 
 .available-doc img {
@@ -189,13 +194,79 @@
   gap: 10px;
 }
 .calender-wrapper {
-  background-color: blue;
+  /* background-color: blue; */
   flex: 4;
-  border-radius: 9.373px;
-  border: 0.469px solid var(--lighter-grey);
-  /* background: var(--white); */
+  padding: 28px;
+  border-radius: 5px;
+  /* border: 0.469px solid var(--lighter-grey); */
+  background: var(--white);
   box-shadow: 1.8746399879455566px 6.561239719390869px 15.934440612792969px 0px
     rgba(0, 94, 93, 0.09);
+}
+.picked-dates-container {
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.picked-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  border-radius: 9px;
+  background: var(--green);
+  width: 300px;
+  padding: 16px;
+  box-shadow: 2px 7px 17px 10px rgba(5, 75, 74, 0.09);
+  cursor: pointer;
+}
+.picked-date:hover {
+  /* transform: scale(1.04); */
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+  transition: all 0.25s ease-in-out;
+}
+.picked-date:nth-child(2),
+.picked-date:nth-child(3) {
+  background-color: var(--white);
+}
+
+#picked-doc {
+  color: var(--white);
+}
+.picked-doctor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 180px;
+}
+.picked-doctor h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.picked-doctor p {
+  font-size: 14px;
+}
+.picked-date .picked-day {
+  width: 56px;
+  height: 57px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--light-green);
+
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+}
+.picked-day p {
+  font-size: 12px;
+}
+.picked-day h5 {
+  font-size: 20px;
 }
 
 .patient-files-wrapper {
