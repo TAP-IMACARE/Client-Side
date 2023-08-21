@@ -1,48 +1,96 @@
 import "./Header.css";
 import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { Link as LinkRoll } from "react-scroll";
+
+import imacareLogo from "../../assets/LandingPage assets/imacare-logo.png";
 import harmburger from "../../assets/hamburger-menu.svg";
 import MobileHeader from "./MobileHeader";
+
 const Header = () => {
   const [hamburger, setHamburgr] = useState(false);
   const toggleHamburger = () => {
     setHamburgr(true);
     console.log("clicked");
   };
+
   return (
     <>
       <MobileHeader hamburger={hamburger} />
       <header className="header">
         <div className="header-container">
-          <img src="./logo.png" alt="logo" />
+          <LinkRoll
+            activeclass="active"
+            to="hero"
+            spy={true}
+            smooth={false}
+            offset={-70}
+            duration={500}
+          >
+            <img src={imacareLogo} alt="logo" />
+          </LinkRoll>
           <div className="hamburger-menu" onClick={toggleHamburger}>
             <img src={harmburger} alt="menu" />
           </div>
-          <nav>
+          <nav className="nav">
             <div className="nav-container"></div>
             <ul>
               <li>
-                <NavLink to={"/"}>Home</NavLink>
+                <LinkRoll
+                  activeclass="active"
+                  to="hero"
+                  spy={true}
+                  smooth={false}
+                  offset={-70}
+                  duration={500}
+                >
+                  Home
+                </LinkRoll>
               </li>
               <li>
-                <Link to={"#"}>Find a Doctor</Link>
+                <LinkRoll
+                  activeclass="active"
+                  to="product"
+                  spy={true}
+                  smooth={false}
+                  offset={10}
+                  duration={500}
+                >
+                  <span>Product</span>
+                </LinkRoll>
               </li>
               <li>
-                <Link to={"#services"} reloadDocument>
-                  Services
-                </Link>
+                <LinkRoll
+                  activeclass="active"
+                  to="pricing"
+                  spy={true}
+                  smooth={true}
+                  offset={35}
+                  duration={500}
+                >
+                  <span>Pricing</span>
+                </LinkRoll>
               </li>
               <li>
-                <Link to={"#"}>Admin</Link>
+                <LinkRoll
+                  activeclass="active"
+                  to={"whyIMACARE"}
+                  spy={true}
+                  smooth={true}
+                  offset={35}
+                  duration={500}
+                >
+                  Why IMACARE
+                </LinkRoll>
               </li>
             </ul>
 
             <div className="links">
-              <Link to={"#"} id="login">
+              <Link to={"/login"} id="login">
                 Log in
               </Link>
-              <Link to={"#"} id="signup">
-                Sign Up
+              <Link to={"#"} id="getStarted">
+                Get Started
               </Link>
             </div>
           </nav>

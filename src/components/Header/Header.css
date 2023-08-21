@@ -1,19 +1,16 @@
-.active {
-  color: var(--green);
-  font-weight: 600;
-}
 .header {
-  height: 80px;
-  background: var(--white);
+  height: 70px;
+  background-color: var(--white);
 
   position: sticky;
   top: 0;
-  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
   z-index: 10;
   overflow: hidden;
+  font-size: 18px;
 }
 .header-container {
-  padding: 0px 30px 0px 20px;
+  padding: 0px 30px 0px 30px;
   margin: 0 auto;
   height: 100%;
   max-width: 1100px;
@@ -22,7 +19,9 @@
   justify-content: space-between;
 }
 .header-container img {
-  height: 80px;
+  height: 70px;
+  width: 75px;
+  cursor: pointer;
 }
 .header-container .hamburger-menu {
   display: none;
@@ -39,44 +38,54 @@
   top: 0.9rem;
   right: 0rem;
 }
-nav {
+.nav {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-nav ul {
+.nav ul {
+  /* padding: 10px; */
   display: flex;
-  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
 }
 
-nav ul li {
-  padding: 0.6rem;
+.nav ul li {
+  width: 65px;
 }
 
-nav li a {
-  font-size: 18px;
+.nav li a {
+  text-decoration: none;
   color: var(--black);
-  font-weight: 400;
+  /* font-weight: 500; */
   white-space: nowrap;
+  cursor: pointer;
 }
-
-nav .links {
-  white-space: nowrap;
-}
-
-nav #login {
-  margin-right: 1rem;
-  text-align: center;
-  padding: 8px 25px;
-  border-radius: 10px;
+.nav li a:hover {
   color: var(--green);
-  border: 1px solid var(--green);
+}
+/* ACTIVE CLASS */
+.nav ul li .active {
+  font-weight: 600;
+  color: var(--green);
+}
+.nav .links {
+  margin-left: 130px;
+  white-space: nowrap;
 }
 
-nav #signup {
+.nav #login {
+  margin-right: 1.2rem;
   text-align: center;
-  padding: 8px 25px;
+  color: var(--green);
+}
+
+.nav #getStarted {
+  text-align: center;
+  padding: 8px 10px;
   border-radius: 10px;
+  font-size: 15px;
   color: var(--white);
   border: 1px solid var(--green);
   background-color: var(--green);
@@ -90,14 +99,14 @@ nav #signup {
 
 /* INITIAL 950px */
 @media all and (max-width: 900px) {
-  nav {
+  .nav {
     display: none;
   }
   .header-container .hamburger-menu {
     display: block;
   }
   .header-container {
-    padding: 0px 25px 0px 0px;
+    padding: 0px 25px 0px 25px;
     margin-left: -10px;
   }
 
