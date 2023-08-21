@@ -1,4 +1,4 @@
-// import "./Login.css";
+import "./Login.css";
 import ImaImg from "../../assets/Imacare-5.png";
 import GoogleImg from "../../assets/google-1.png";
 import LockImg from "../../assets/lock.png";
@@ -14,7 +14,7 @@ const Login = () => {
         <h1>Hi, Welcome Back!</h1>
         <p id="login-text">Log in to your account</p>
 
-        <form>
+        <form className="loginForm">
           <div className="login-form-group">
             <label>Email Address</label>
             <div className="login-input-with-icon">
