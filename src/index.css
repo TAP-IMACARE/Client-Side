@@ -11,8 +11,9 @@ html {
 :root {
   --green: #005e5d;
   --light-green: #d3efd9;
+  --lightest-green: #f8fcf9;
   --white: #ffffff;
-  --black: #000000;
+  --black: #000;
   --grey: #464949;
   --light-grey: #939393;
   --lighter-grey: #d1d1d1;
