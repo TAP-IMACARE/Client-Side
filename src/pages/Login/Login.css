@@ -115,7 +115,7 @@ background: var(--white, #FFF);
 .login-error{
     color: var(--red, #BB0808);
     
-    /* small/body/regular/14 */
+    text-align: right;
     font-size: 14px;
     font-family: Roboto;
     font-style: normal;

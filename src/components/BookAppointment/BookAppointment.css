@@ -32,14 +32,14 @@ form .form-control {
   border: 0.819px solid var(--light-grey, #939393);
   background: var(--white, #fff);
 
-  ::-webkit-calendar-picker-indicator {
+  /*::-webkit-calendar-picker-indicator {
     position: absolute;
     right: 15px;
     width: 17.842px;
     height: 19.824px;
     background-image: url("../../assets/calendar-icon.svg");
     opacity: 1;
-  }
+  }*/
 }
 form input {
   width: 80%;
@@ -52,7 +52,7 @@ form input:focus {
   border: 0.819px solid var(--light-grey, #939393);
 }
 
-form button {
+#BookAppointmentButton {
   background-color: #005e5d;
   color: #fff;
   font-size: 20.476px;

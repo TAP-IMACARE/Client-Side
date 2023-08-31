@@ -38,7 +38,7 @@ const AdminLogin = () => {
           <div className="adminlogin-all">
             <img src={ImaImg} alt="ImaCare"  className="adminlogin-imacare"/>
     
-          <form action="#" onSubmit={handleSubmit}>
+          <form action="#" onSubmit={handleSubmit} id="admin-login-form">
           <span id="adminlogin-closeimg">
                               <img src={closeImage} alt="" />
                           </span>

@@ -67,7 +67,7 @@ const BookAppointment = () => {
           />
         </div>
 
-        <button type="submit">Book Now</button>
+        <button type="submit" id="BookAppointmentButton">Book Now</button>
       </form>
     </div>
   );

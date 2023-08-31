@@ -8,7 +8,7 @@ flex-direction: column;
 align-items: flex-start;
 /*gap: 760px;*/
 flex: 1 0 0;
-padding: 30px 80px 30px 80px;
+padding: 30px 80px 90px 80px;
 align-self: stretch;
 }
 .adminlogin-all {
@@ -18,7 +18,7 @@ padding-bottom: -10px;
     width: 111px;
     height: 112px;
 }
-form {
+#admin-login-form {
     width: 500px;
     border-radius: 30px;
 background: var(--white, #FFF);
@@ -75,6 +75,13 @@ padding: 24.3px 24.29px;
 justify-content: center;
 align-items: center;
 gap: 10px;
+border-radius: 8.097px;
+background: var(--green, #005E5D);
+color: var(--white, #FFF);
+font-size: 20.243px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 }
 footer{
     margin-top:90px ;

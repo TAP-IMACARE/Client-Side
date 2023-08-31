@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import ScheduleAppointment from "./pages/ScheduleAppointment/ScheduleAppointment.jsx";
 import Login from "./pages/Login/Login.jsx"
 import AdminLogin from "./pages/AdminLogin/AdminLogin.jsx";
+import AdminSignup from "./pages/AdminSignup/AdminSignup.jsx";
 // import Signup from "./pages/Signup/Signup.jsx";
 
 const router = createBrowserRouter([
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "admin-login",
     element: <AdminLogin />,
+  },
+  {
+    path: "admin-signup",
+    element: <AdminSignup />,
   }
 ]);
 
