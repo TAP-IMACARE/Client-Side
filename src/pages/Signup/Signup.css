@@ -1,0 +1,239 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+.signup-container {
+  display: flex;
+  
+}
+.signup-form {
+  display: flex;
+  padding: 30px 80px 20px 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  height: 100%;
+}
+.signup-form h1 {
+  color: var(--green, #005e5d);
+  font-family: Roboto;
+  font-size: 40.486px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+  margin-top: -5px;
+}
+.signup-form #signup-text {
+  color: var(--grey, #464949);
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: -5px;
+}
+.signup-main-Form{
+  margin-top: 30px;
+}
+.signup-name {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6.478px;
+  flex: 1 0 0;
+}
+.signup-icon {
+  display: flex;
+  padding: 3.385px;
+  align-items: flex-start;
+  gap: 5px;
+}
+.signup-input-with-icon {
+  border-radius: 6.478px;
+  border: 0.81px solid var(--light-grey, #939393);
+  background: var(--white, #fff);
+  display: flex;
+  padding: 15px 0.34px 15px 5.146px;
+  align-items: center;
+  gap: 5.194px;
+  align-self: stretch;
+}
+
+.signup-input-with-icon input {
+  text-align: left;
+  padding-left: 5px;
+  border: none; 
+  font-size: 20px;
+  
+}
+.signup-input-with-icon input:focus{
+  border: 1px solid #939393;
+}
+
+  
+
+
+.login-visibility-icon {
+  margin-left: 230px;
+}
+.signup-input-with-icon input[type="text"] {
+  padding-left: 0px;
+  margin-left: 0%;
+}
+
+input {
+  padding-left: 0;
+  margin-left: 0%;
+}
+
+.signup-form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5.478px;
+  margin-bottom: 33px;
+}
+
+.signup-button-teal button {
+  display: flex;
+  width: 520px;
+  align-items: center;
+  gap: 16.194px;
+  padding: 18.3px 24.292px;
+  justify-content: center;
+  gap: 8.097px;
+  align-self: stretch;
+  background-color: #005e5d;
+  color: var(--white, #FFF);
+  font-size: 20.243px;
+  border-radius: 6.478px;
+}
+
+#signup-terms {
+  color: var(--grey, #464949);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 14.575px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 20.24px;
+  margin-bottom: 20.24px;
+}
+#signup-terms span {
+  color: var(--green, #005e5d);
+  font-family: Roboto;
+  font-size: 14.575px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#signup-first-lastname {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  align-self: stretch;
+}
+.horizontal-lines {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  align-self: stretch;
+}
+.horizontal-lines hr {
+  color: var(--light-grey, #939393);
+}
+.horizontal-line {
+  width: 100%;
+  height: 1px;
+  background-color: var(--light-grey, #939393);
+  border: none;
+}
+#signup-google {
+  display: flex;
+  justify-content: center;
+  color: var(--light-grey, #939393);
+  text-align: center;
+  font-family: Roboto;
+  font-size: 20.243px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 10px 24.292px;
+  align-items: center;
+  gap: 6.097px;
+  align-self: stretch;
+  border-radius: 8.097px;
+  border: 0.81px solid var(--light-grey, #939393);
+  background: var(--white, #fff);
+  margin-top: 20.24px;
+}
+#signup-google img {
+  width: 28.485px;
+  height: 29.15px;
+}
+
+.signup-account-p {
+  display: flex;
+  justify-content: center;
+  color: var(--grey, #464949);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 55px;
+}
+.signup-account-p span {
+  color: var(--green, #005e5d);
+  font-family: Roboto;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.signup-medic-img {
+  display: flex;
+  padding: 20.261px 50px 10.578px 50px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 370px;
+  flex: 1 0 0;
+  align-self: stretch;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 94, 93, 0.5) 0%,
+      rgba(0, 16, 16, 0.06) 33.92%,
+      rgba(0, 11, 11, 0) 52.34%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url("../../assets/medicimg.jpeg") lightgray 50% / cover no-repeat;
+}
+.signup-medic-img h1 {
+  color: #fff;
+
+  
+  font-family: Roboto;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 644px;
+}
+.signup-medic-img span {
+  color: var(--white, #fff);
+  text-align: right;
+  font-family: Roboto;
+  font-size: 16.01px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

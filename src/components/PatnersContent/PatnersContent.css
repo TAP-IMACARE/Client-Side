@@ -1,0 +1,27 @@
+.patnersContent-container {
+  background-color: var(--white);
+  height: 250px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.patnersContent-container {
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.patners-logo-container {
+  display: flex;
+  /* align-items: baseline;
+  justify-content: baseline; */
+  gap: 60px;
+}
+
+.patners-logo-container img {
+  width: 150px;
+  max-height: 80px;
+}

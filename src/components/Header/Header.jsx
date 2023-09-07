@@ -1,44 +1,102 @@
 import "./Header.css";
-import { Link, NavLink } from "react-router-dom";
-import harmburger from "../../assets/hamburger-menu.svg";
-const Header = () => {
-  return (
-    <header className="header">
-      <div className="header-container">
-        <img src="./logo.png" alt="logo" />
-        <div className="hamburger-menu">
-          <img src={harmburger} alt="menu" />
-        </div>
-        <nav>
-          <div className="nav-container"></div>
-          <ul>
-            <li>
-              <NavLink to={"/"}>Home</NavLink>
-            </li>
-            <li>
-              <Link to={"#"}>Find a Doctor</Link>
-            </li>
-            <li>
-              <Link to={"#services"} reloadDocument>
-                Services
-              </Link>
-            </li>
-            <li>
-              <Link to={"#"}>Admin</Link>
-            </li>
-          </ul>
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import { Link as LinkRoll } from "react-scroll";
 
-          <div className="links">
-            <Link to={"#"} id="login">
-              Log in
-            </Link>
-            <Link to={"#"} id="signup">
-              Sign Up
-            </Link>
+import imacareLogo from "../../assets/LandingPage assets/imacare-logo.png";
+import harmburger from "../../assets/hamburger-menu.svg";
+import MobileHeader from "./MobileHeader";
+
+const Header = () => {
+  const [hamburger, setHamburgr] = useState(false);
+  const toggleHamburger = () => {
+    setHamburgr(true);
+    console.log("clicked");
+  };
+
+  return (
+    <>
+      <MobileHeader hamburger={hamburger} />
+      <header className="header">
+        <div className="header-container">
+          <LinkRoll
+            activeclass="active"
+            to="hero"
+            spy={true}
+            smooth={false}
+            offset={-70}
+            duration={500}
+          >
+            <img src={imacareLogo} alt="logo" />
+          </LinkRoll>
+          <div className="hamburger-menu" onClick={toggleHamburger}>
+            <img src={harmburger} alt="menu" />
           </div>
-        </nav>
-      </div>
-    </header>
+          <nav className="nav">
+            <div className="nav-container"></div>
+            <ul>
+              <li>
+                <LinkRoll
+                  activeclass="active"
+                  to="hero"
+                  spy={true}
+                  smooth={false}
+                  offset={-70}
+                  duration={500}
+                >
+                  Home
+                </LinkRoll>
+              </li>
+              <li>
+                <LinkRoll
+                  activeclass="active"
+                  to="product"
+                  spy={true}
+                  smooth={false}
+                  offset={10}
+                  duration={500}
+                >
+                  <span>Product</span>
+                </LinkRoll>
+              </li>
+              <li>
+                <LinkRoll
+                  activeclass="active"
+                  to="pricing"
+                  spy={true}
+                  smooth={true}
+                  offset={35}
+                  duration={500}
+                >
+                  <span>Pricing</span>
+                </LinkRoll>
+              </li>
+              <li>
+                <LinkRoll
+                  activeclass="active"
+                  to={"whyIMACARE"}
+                  spy={true}
+                  smooth={true}
+                  offset={35}
+                  duration={500}
+                >
+                  Why IMACARE
+                </LinkRoll>
+              </li>
+            </ul>
+
+            <div className="links">
+              <Link to={"/login"} id="login">
+                Log in
+              </Link>
+              <Link to={"#"} id="getStarted">
+                Get Started
+              </Link>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </>
   );
 };
 

@@ -4,6 +4,10 @@
     box-sizing: border-box;
     
   }
+  body {
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+  }
   .Admin_Signup_Page{
     display:flex;
 }
@@ -13,9 +17,11 @@ padding: 50px 80px 20px 80px;
 flex-direction: column;
 align-items: flex-start;
 align-self: stretch;
+gap: 15.389px;
 }
 #admin-signup-form-body {
     margin-top: 20px;
+    gap: 30.583px;
 }
 .Admin_Signup_Form h1 {
     color: var(--green, #005E5D);
@@ -49,9 +55,20 @@ align-items: center;
 border-radius: 6.478px;
 border: 0.81px solid var(--light-grey, #939393);
 background: var(--white, #FFF);
+gap: 15px;
 }
-
-
+.Admin_Signup_input_with_icon input {
+    border: none;
+    width: 300.24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 20px;
+}
+.Admin_Signup_input_with_icon input:focus {
+    border: 1px solid #939393;
+   
+} 
 
 .Admin_Signup_input_with_icon.incorrect input {
     border-color: red; 
@@ -101,6 +118,66 @@ form p span,
     margin-top: 30px;
     margin-left: 70px;
 }
+@media (max-width: 768px) {
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+  
+    .Admin_Signup_Page {
+      display: block;
+    }
+  
+    .Admin_Signup_Form {
+      padding: 20px; 
+      gap: 10px;
+    }
+  
+    .Admin_Signup_Form h1 {
+      font-size: 24px; 
+    }
+  
+    label {
+      font-size: 18px; 
+    }
+  
+    .Admin_Signup_input_with_icon {
+      width: 100%; 
+      padding: 10px; 
+      gap: 5px; 
+    }
+  
+    .Admin_Signup_input_with_icon input {
+      width: 100%; 
+      font-size: 16px; 
+    }
+  
+    #Admin-Signup-Button {
+      padding: 10px 20px; 
+      font-size: 18px; 
+    }
+  
+    form p {
+      font-size: 14px; 
+    }
+  
+    #Admin-Signup-outsideform {
+      font-size: 18px; 
+      margin-top: 20px; 
+      margin-left: 0; 
+    }
+  
+    .Admin-signup-copyright h1 {
+      font-size: 32px; 
+    }
+  
+    .Admin-signup-copyright span {
+      margin-top: 20px; 
+    }
+  }
+  
+
 .Admin_Signup_Image{
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 0%, rgba(0, 12, 16, 0.06) 29.35%), url("../../assets/AdminSignupLady.jpeg"), lightgray 50% / cover no-repeat;
     background-size: cover;

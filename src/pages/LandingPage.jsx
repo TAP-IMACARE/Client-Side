@@ -1,18 +1,18 @@
 import Header from "../components/Header/Header";
-import OurDoctors from "../components/OurDoctors/OurDoctors";
-import OurServices from "../components/OurServices/OurServices";
-import WhyChooseUs from "../components/WhyChooseUs/WhyChooseUs";
 import Hero from "../components/Hero/Hero";
+import PatientInfoContent from "../components/PatientInfoContent/PatientInfoContent";
+import WhyUs from "../components/WhyUs/WhyUs";
 import Footer from "../components/Footer/Footer";
+import Plans from "../components/Plans/Plans";
 
 const LandingPage = () => {
   return (
     <>
       <Header />
       <Hero />
-      <WhyChooseUs />
-      <OurServices />
-      <OurDoctors />
+      <PatientInfoContent />
+      <WhyUs />
+      <Plans />
       <Footer />
     </>
   );

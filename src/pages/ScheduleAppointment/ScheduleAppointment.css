@@ -1,5 +1,5 @@
 .schedule-appointment-container {
-  height: 100vh;
+  min-height: 100vh;
   background: linear-gradient(180deg, #005e5d 0%, rgba(0, 0, 0, 0.65) 100%),
     url("../../assets/schedule-appointment.jpeg"),
     lightgray -390.222px 4px / 126.42% 100% no-repeat;
@@ -21,6 +21,9 @@
   width: 37.19px;
   height: 27.19px;
 }
+#scheduleAppointment-mobile-closeIcon {
+  display: none;
+}
 .schedule-appointment-content {
   display: flex;
   flex-direction: column;
@@ -29,11 +32,11 @@
 .schedule-appointment-content h1 {
   font-size: 40px;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--white);
   margin-bottom: 5px;
 }
 .schedule-appointment-content p {
-  color: #d1d1d1;
+  color: var(--lighter-grey);
   font-size: 18px;
 }
 
@@ -48,8 +51,8 @@
   text-align: center;
   padding: 45px 25px 50px 25px;
   border-radius: 12.371px;
-  border: 1.546px solid #939393;
-  background: var(--white, #fff);
+  border: 1.546px solid var(--light-grey);
+  background: var(--white);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3),
     0px 8px 12px 12px rgba(0, 0, 0, 0.15);
 }
@@ -60,14 +63,14 @@
   margin-bottom: 30px;
 }
 .schedule-appointment-card p {
-  color: #464949;
+  color: var(--grey);
   font-size: 20px;
 }
 
 .schedule-appointment-card button {
   margin-top: 45px;
-  background-color: #005e5d;
-  color: #fff;
+  background-color: var(--green);
+  color: var(--white);
   font-size: 18px;
   width: 150.938px;
   height: 50px;
@@ -79,5 +82,82 @@
   margin-left: 80px;
   position: fixed;
   bottom: 10px;
-  color: #fff;
+  color: var(--white);
+}
+
+@media all and (max-width: 656px) {
+  .schedule-appointment-cards {
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 20px;
+  }
+  .schedule-appointment-footer {
+    display: none;
+  }
+  #scheduleAppointment-logo {
+    display: none !important;
+  }
+}
+
+@media all and (max-width: 564px) {
+  .schedule-appointment-container {
+    background: var(--white);
+    min-height: 900px;
+  }
+  .schedule-appointment-header {
+    height: 170px;
+    position: relative;
+    width: 100%;
+  }
+  #scheduleAppointment-mobile-closeIcon {
+    display: block;
+    position: absolute;
+    right: 38px;
+    top: 80px;
+  }
+  .schedule-appointment-header #scheduleAppointment-closeIcon {
+    display: none;
+  }
+  .schedule-appointment-content h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 5px;
+  }
+  .schedule-appointment-content p {
+    color: var(--black);
+    font-size: 14px;
+  }
+  .schedule-appointment-cards {
+    gap: 45px;
+  }
+
+  .schedule-appointment-card {
+    width: 265px;
+    height: 270px;
+
+    box-shadow: none;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    border: 0.5px solid var(--black);
+    background: var(--white);
+  }
+  .schedule-appointment-card h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 30px;
+  }
+  .schedule-appointment-card p {
+    color: var(--black);
+    font-size: 16px;
+  }
+  .schedule-appointment-card button {
+    margin-top: 45px;
+    font-size: 18px;
+    width: 133px;
+    height: 39px;
+
+    border-radius: 10px;
+  }
 }

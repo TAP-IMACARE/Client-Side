@@ -2,6 +2,7 @@ import "./ScheduleAppointment.css";
 import { Link } from "react-router-dom";
 import logo from "../../assets/Imacare-logo2.png";
 import closeIcon from "../../assets/close.svg";
+import mobileCloseIcon from "../../assets/mobile-close.svg";
 
 const ScheduleAppointment = () => {
   return (
@@ -10,7 +11,13 @@ const ScheduleAppointment = () => {
         <Link to={"/"}>
           <img src={logo} alt="logo" id="scheduleAppointment-logo" />
         </Link>
-
+        <Link to={"/"}>
+          <img
+            src={mobileCloseIcon}
+            alt="close"
+            id="scheduleAppointment-mobile-closeIcon"
+          />
+        </Link>
         <Link to={"/"}>
           <img src={closeIcon} alt="close" id="scheduleAppointment-closeIcon" />
         </Link>
@@ -25,7 +32,7 @@ const ScheduleAppointment = () => {
             <h3>Current Patient</h3>
             <p>Already have an account? Log in to book an appointment</p>
 
-            <Link to="login">
+            <Link to={"/login"}>
               <button>Log in</button>
             </Link>
           </div>
@@ -34,7 +41,7 @@ const ScheduleAppointment = () => {
             <h3>New Patient</h3>
             <p>Don’t have an account? Sign Up to book an appointment</p>
 
-            <Link to="signup">
+            <Link to={"/signup"}>
               <button>Sign Up</button>
             </Link>
           </div>

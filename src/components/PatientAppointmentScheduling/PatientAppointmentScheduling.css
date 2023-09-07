@@ -1,0 +1,35 @@
+.PatientAppointmentScheduling-container {
+  background-color: var(--white);
+  height: 400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 100px;
+  gap: 100px;
+}
+.PatientAppointmentScheduling-left {
+  width: 50%;
+}
+.PatientAppointmentScheduling-left img {
+  width: 100%;
+}
+
+.PatientAppointmentScheduling-right {
+  width: 50%;
+  text-align: right;
+  /* height: 100%; */
+}
+.PatientAppointmentScheduling-right-container {
+  /* margin-right: 90px; */
+  width: 80%;
+}
+.PatientAppointmentScheduling-right h3 {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.PatientAppointmentScheduling-right p {
+  font-size: 16px;
+  line-height: 26px;
+}

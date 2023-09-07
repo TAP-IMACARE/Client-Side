@@ -29,7 +29,7 @@ margin-bottom: 30px;
 /*left: 419px;
 top: 159px;*/
 display: flex;
-padding: 15px 45px 80px 45px;
+padding: 50px 45px 80px 45px;
 flex-direction: column;
 align-items: flex-start;
 gap: 30px;
@@ -48,12 +48,23 @@ height: 20.729px;
 .adminlogin-input-icon {
     display: flex;
     width: 400.298px;
-    padding: 20.243px /*28.34px 20.243px 16.194px*/;
+    padding: 20.243px; /*28.34px 20.243px 16.194px;*/
     align-items: center;
-    gap: 5.194px; 
+    gap: 10.194px; 
     border-radius: 6.478px;
 border: 0.81px solid var(--light-grey, #939393);
 background: var(--white, #FFF);
+}
+.adminlogin-input-icon input {
+    border: none;
+    width: 300.24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    font-size: 20px;
+}
+.adminlogin-input-icon input:focus {
+    border: 1px solid #939393;
 }
 #adminlogin-forgot {
 
@@ -84,7 +95,7 @@ font-weight: 400;
 line-height: normal;
 }
 footer{
-    margin-top:90px ;
+    margin-top:70px ;
     color: #FFF;
 
 /* small/body/medium/20 */
