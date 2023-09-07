@@ -5,9 +5,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-html {
-  scroll-behavior: smooth;
-}
+
 :root {
   --green: #005e5d;
   --light-green: #d3efd9;
