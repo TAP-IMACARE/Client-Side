@@ -11,7 +11,7 @@
   align-items: center;
 
   height: 100%;
-  /* width: 100%; */
+  max-width: 950px;
 }
 .dashboard-Navbar-container .navbar-search {
   position: relative;
@@ -82,5 +82,4 @@
 .navbar-right .profile img {
   width: 35px;
   height: 35px;
-  flex-shrink: 0;
 }
