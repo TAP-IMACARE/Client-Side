@@ -7,7 +7,7 @@
   box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.3);
   z-index: 10;
   overflow: hidden;
-  font-size: 18px;
+  font-size: 16px;
 }
 .header-container {
   padding: 0px 30px 0px 30px;
@@ -58,7 +58,7 @@
 .nav li a {
   text-decoration: none;
   color: var(--black);
-  /* font-weight: 500; */
+  font-weight: 400;
   white-space: nowrap;
   cursor: pointer;
 }
@@ -67,7 +67,7 @@
 }
 /* ACTIVE CLASS */
 .nav ul li .active {
-  font-weight: 600;
+  font-weight: 500;
   color: var(--green);
 }
 .nav .links {
