@@ -1,9 +1,31 @@
 .sidebar-container {
-  flex: 1;
+  /* max-width: 320px;
+  min-width: 290px; */
+  /* flex: 1; */
   padding: 20px 10px 30px 40px;
-  /* width: 366px; */
+  width: 300px;
   background-color: var(--green);
   color: var(--white);
+
+  height: 100vh;
+  overflow-y: auto;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--lighter-grey);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--lightest-grey);
+  border-radius: 5px;
+  width: 4px;
 }
 
 .sidebar-logo img {
@@ -25,12 +47,7 @@
 .sidebar-tabs a {
   color: var(--white);
 }
-/* .sidebar-tabs a img {
-  background-color: var(--white);
-} */
-/* .side-tabs .tab span {
-  color: red;
-} */
+
 .sidebar-tabs {
   margin-top: 40px;
   display: flex;

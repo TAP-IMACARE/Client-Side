@@ -16,13 +16,18 @@ import chatIcon from "../../assets/dashboard assets/chat-icon.svg";
 import profileIcon from "../../assets/dashboard assets/profile-icon.svg";
 import helpIcon from "../../assets/dashboard assets/help-icon.svg";
 import logoutIcon from "../../assets/dashboard assets/logout-icon.svg";
-import { Link, NavLink, useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useMemo } from "react";
 
 const CustomNav = ({ to, children, activeIcon, inactiveIcon }) => {
   const { pathname } = useLocation();
   const isActive = useMemo(() => {
-    return pathname === to;
+    const routeList = to.split("/").filter(Boolean);
+    const exactPath = routeList[1];
+    if (routeList.length === 1) {
+      return to === pathname;
+    }
+    return pathname.includes(exactPath);
   }, [pathname, to]);
   return (
     <Link to={to} className={isActive ? "active" : ""}>
@@ -55,7 +60,7 @@ const Sidebar = () => {
           </CustomNav>
 
           <CustomNav
-            to={"/dashboard/appointment"}
+            to={"/dashboard/appointment/upcoming"}
             activeIcon={activeAppointmentIcon}
             inactiveIcon={appointmentIcon}
           >
