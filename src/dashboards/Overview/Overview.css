@@ -1,40 +1,5 @@
-.home-container {
-  display: flex;
-}
-
-.home-dashboard {
-  flex: 4;
-  /* min-height: 713px; */
-  min-height: 100vh;
-}
-
-.home-dashbord-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 50px;
-  padding: 20px 45px 10px 40px;
-}
-.home-dashbord-top h3 {
-  font-size: 20px;
-  font-weight: 500;
-}
-.dashboard-date-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  width: 180px;
-  height: 35px;
-
-  border-radius: 4px;
-  border: 0.5px solid var(--lighter-grey);
-}
-.dashboard-date-container span {
-  font-size: 14px;
-}
-
-.home-dashboard main {
+/* changed class name */
+.home-dashboard-main {
   margin-top: 12px;
   display: flex;
   gap: 15px;
@@ -43,7 +8,7 @@
 }
 /* LEFT */
 .home-dasboard-left {
-  flex: 3;
+  /* flex: 3; */
 
   display: flex;
   flex-direction: column;
@@ -56,6 +21,7 @@
 }
 
 .schedule-container .schedule-app {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,9 +49,9 @@
 }
 
 .home-dasboard-left .upcomming-app {
-  /* max-height: 300px; */
-  height: 400px;
-  padding: 20px 32.006px 18.289px 20px;
+  min-height: 350px;
+  /* height: 400px; */
+  padding: 20px 32.006px 20px 20px;
 
   border-radius: 5px;
   border: 0.469px solid var(--lighter-grey);
@@ -96,6 +62,7 @@
 
 .upcomming-app h4 {
   font-weight: 500;
+  margin-bottom: 24px;
 }
 
 .home-dasboard-left .available-docs {
@@ -187,7 +154,7 @@
 
 /* RIGHT */
 .home-dashboard-right {
-  flex: 2;
+  /* flex: 2; */
 
   display: flex;
   flex-direction: column;
@@ -204,6 +171,9 @@
     rgba(0, 94, 93, 0.09);
 }
 .picked-dates-container {
+  border-top: 0.5px solid var(--lighter-grey);
+  padding-top: 20px;
+
   margin-top: 18px;
   display: flex;
   flex-direction: column;
