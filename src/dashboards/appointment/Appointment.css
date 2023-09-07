@@ -7,14 +7,20 @@
 .appointment-container .appointment-nav {
   display: flex;
   gap: 30px;
+
   border-bottom: 1px solid var(--lighter-grey);
 }
 
 .appointment-nav .appointment-items {
-  font-size: 18px;
-  color: var(--lighter-grey);
+  /* font-size: 18px;
+  color: var(--lighter-grey); */
   cursor: pointer;
 }
+.appointment-nav a {
+  font-size: 18px;
+  color: var(--lighter-grey);
+}
+/* Active link */
 .appointment-container .appointment-nav .active {
   color: var(--green);
   font-weight: 600;
@@ -33,7 +39,7 @@
 
   border-radius: 8.899px;
   border: 0.5px solid var(--lighter-grey);
-  height: 340px;
+  /* height: 340px; */
   width: 300px;
 }
 .appointment-card h5 {
