@@ -39,7 +39,8 @@
 
 .horizontal-line {
   border-top: 1.5px solid var(--lighter-grey);
-  width: 100%;
+  /* width: 100%; */
+  max-width: 1400px;
 }
 .contact-address {
   width: 400px;
@@ -57,7 +58,8 @@
 }
 
 .footer-allRights {
-  max-width: 100%;
+  max-width: 1400px;
+  /* max-width: 100%; */
   padding-top: 13.501px;
   display: flex;
   justify-content: space-between;
