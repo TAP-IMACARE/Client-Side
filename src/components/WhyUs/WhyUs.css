@@ -71,7 +71,7 @@
   cursor: pointer;
 }
 .whyUs-left-content_header h4 {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 500;
 }
 .whyUs-left-activeContent p {
@@ -79,8 +79,6 @@
   width: 327px;
 }
 .whyUs-left-inactive {
-  font-size: 20px;
-  font-weight: 500;
   width: 400px;
   padding: 0 20px;
   margin-bottom: 30px;
@@ -89,6 +87,10 @@
   align-items: center;
 
   cursor: pointer;
+}
+.whyUs-left-inactive h4 {
+  font-size: 18px;
+  font-weight: 500;
 }
 .whyUs-left .inactive {
   display: none;
