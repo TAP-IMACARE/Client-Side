@@ -54,7 +54,7 @@ const AdminLogin = () => {
               />
               <span className="adminlogin-visibility-icon">
                               <img src={LoginVisImg} alt="Visibility Off" />
-                          </span>
+              </span>
              </div>
             </div>
 
