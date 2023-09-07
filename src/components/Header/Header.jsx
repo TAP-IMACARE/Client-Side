@@ -23,7 +23,7 @@ const Header = () => {
             activeclass="active"
             to="hero"
             spy={true}
-            smooth={false}
+            smooth={true}
             offset={-70}
             duration={500}
           >
@@ -40,7 +40,7 @@ const Header = () => {
                   activeclass="active"
                   to="hero"
                   spy={true}
-                  smooth={false}
+                  smooth={true}
                   offset={-70}
                   duration={500}
                 >
@@ -52,7 +52,7 @@ const Header = () => {
                   activeclass="active"
                   to="product"
                   spy={true}
-                  smooth={false}
+                  smooth={true}
                   offset={10}
                   duration={500}
                 >
