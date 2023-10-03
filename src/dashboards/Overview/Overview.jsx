@@ -11,7 +11,7 @@ import whiteArrow from "../../assets/dashboard assets/whiteArrow-icon.svg";
 import Calendar from "../../components/calender/Calender";
 
 import TopComponent from "../topComponent/TopComponent";
-import DoctorTable from "../../components/Table/DoctorTable";
+import DoctorTable from "../../components/Tables/DoctorTable";
 import "./Overview.css";
 
 const Overview = () => {
