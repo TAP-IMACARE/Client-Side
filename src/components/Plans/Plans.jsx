@@ -7,7 +7,7 @@ const Plans = () => {
       <h3>Select The Perfect Plan For You</h3>
 
       <div className="plans">
-        <div className="plan">
+        <div className="plan unselected_plan">
           <div className="package">
             <h5>FREE</h5>
             <div className="price">
@@ -94,7 +94,7 @@ const Plans = () => {
         </div>
 
         {/* PREMIUM PLAN */}
-        <div className="plan">
+        <div className="plan unselected_plan">
           <div className="package">
             <h5>PREMIUM</h5>
             <div className="price">
