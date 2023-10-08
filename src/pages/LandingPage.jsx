@@ -10,9 +10,9 @@ const LandingPage = () => {
     <>
       <Header />
       <Hero />
-      <PatientInfoContent />
+      {/* <PatientInfoContent /> */}
       <WhyUs />
-      <Plans />
+      {/* <Plans /> */}
       <Footer />
     </>
   );
