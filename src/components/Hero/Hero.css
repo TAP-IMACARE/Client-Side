@@ -56,17 +56,16 @@
   }
   .hero-content h1 {
     padding: auto;
-    font-size: 60px;
-    line-height: 65px;
+    font-size: 50px;
+    line-height: normal;
+  }
+  .hero-content p {
+    font-size: 19px;
   }
 }
 @media screen and (max-width: 490px) {
   .hero-content h1 {
     padding: auto;
-    font-size: 50px;
-    line-height: 65px;
-  }
-  .hero-content p {
-    font-size: 20px;
+    font-size: 40px;
   }
 }
