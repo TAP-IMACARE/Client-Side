@@ -39,9 +39,9 @@ const PatientInfoContent = () => {
         </div>
       </div>
 
-      <PatientAppointmentScheduling />
+      {/* <PatientAppointmentScheduling />
       <PatientCommunication />
-      <PatnersContent />
+      <PatnersContent /> */}
     </div>
   );
 };

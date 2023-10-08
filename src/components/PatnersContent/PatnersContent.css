@@ -16,12 +16,18 @@
 
 .patners-logo-container {
   display: flex;
+  align-items: center;
   /* align-items: baseline;
   justify-content: baseline; */
   gap: 60px;
+
+  background-color: red;
 }
 
 .patners-logo-container img {
   width: 150px;
   max-height: 80px;
+}
+
+@media screen and (max-width: 470px) {
 }
