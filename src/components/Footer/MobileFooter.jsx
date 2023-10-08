@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import "./Footer.css";
 import mobileArrowUp from "../../assets/mobile-arrowUp.svg";
 import mobileArrowDown from "../../assets/mobile-arrowDown.svg";
