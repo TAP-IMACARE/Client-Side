@@ -8,15 +8,14 @@ import harmburger from "../../assets/hamburger-menu.svg";
 import MobileHeader from "./MobileHeader";
 
 const Header = () => {
-  const [hamburger, setHamburgr] = useState(false);
+  const [hamburger, setHamburger] = useState(false);
   const toggleHamburger = () => {
-    setHamburgr(true);
-    console.log("clicked");
+    setHamburger(true);
   };
 
   return (
     <>
-      <MobileHeader hamburger={hamburger} />
+      <MobileHeader hamburger={hamburger} setHamburger={setHamburger} />
       <header className="header">
         <div className="header-container">
           <LinkRoll

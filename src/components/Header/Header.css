@@ -90,14 +90,9 @@
   border: 1px solid var(--green);
   background-color: var(--green);
 }
-/* 
-@media all and (min-width:900px) {
-  .mobile-nav {
-    display: none;
-  }
-} */
 
 /* INITIAL 950px */
+/* MOBILE MENU */
 @media all and (max-width: 900px) {
   .nav {
     display: none;
@@ -110,24 +105,60 @@
     margin-left: -10px;
   }
 
+  .mobile-nav-container {
+    position: fixed;
+    top: 0;
+    right: 0;
+    border-radius: 10px 0px 0px 10px;
+    width: 0px;
+    min-height: 943px;
+    z-index: 9999;
+
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.6) 0%,
+      rgba(0, 0, 0, 0.6) 100%
+    );
+    width: 100%;
+  }
+
   .mobile-nav {
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     background-color: var(--white);
     border-radius: 10px 0px 0px 10px;
-    width: 0px;
-    height: 943px;
+    width: 0;
+    min-height: 943px;
     z-index: 9999;
 
     overflow: hidden;
-    transform: translateX(100%);
-    transition: all 10.7s ease-in-out;
+    transform: translateX(-100%);
+
+    animation-name: hamburgerToggle;
+    animation-duration: 0.25s;
+    transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
   }
-  .activated {
-    transform: translateX(0px);
-    width: 60%;
+
+  @keyframes hamburgerToggle {
+    0% {
+      width: 0%;
+    }
+    100% {
+      max-width: 60%;
+    }
   }
+
+  .mobile-nav-width {
+    transform: translateX(0);
+    width: 35%;
+  }
+
+  /* .mobile-nav-hidden {
+    transform: translateX();
+    width: 0;
+  } */
+
   .mobile-nav ul {
     margin-top: 90px;
     margin-left: 20px;
@@ -152,5 +183,32 @@
     align-items: center;
     gap: 14px;
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .mobile-nav-width {
+    transform: translateX(0);
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .mobile-nav-width {
+    transform: translateX(0);
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  .mobile-nav-width {
+    transform: translateX(0);
+    width: 65%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .mobile-nav-width {
+    transform: translateX(0);
+    width: 70%;
   }
 }
