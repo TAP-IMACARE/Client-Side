@@ -40,7 +40,6 @@ const CustomNav = ({ to, children, activeIcon, inactiveIcon }) => {
 };
 
 const Sidebar = () => {
-  console.log(useLocation());
   return (
     <div className="sidebar-container">
       <div className="sidebar-top">
