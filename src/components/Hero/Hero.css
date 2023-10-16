@@ -1,0 +1,71 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  color: var(--white);
+
+  height: 568px;
+  /* width: 100%; */
+  background: linear-gradient(
+      0deg,
+      rgba(1, 40, 40, 0.7) 0%,
+      rgba(64, 93, 93, 0.4) 58.84%,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    url("../../assets/LandingPage assets/hero-image.jpg"),
+    lightgray 0px -65.949px / 100% 146.61% no-repeat;
+  background-size: cover;
+
+  background-position-y: 25%;
+}
+
+.hero-content {
+  margin-top: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+.hero-content h1 {
+  padding: auto;
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 65px;
+}
+
+.hero-content p {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+#hero-explore {
+  text-align: center;
+  padding: 10px 16px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: var(--white);
+  background: #bc6e00;
+}
+
+@media screen and (max-width: 642px) {
+  .hero {
+    background-position-x: -190px;
+  }
+  .hero-content h1 {
+    padding: auto;
+    font-size: 50px;
+    line-height: normal;
+  }
+  .hero-content p {
+    font-size: 19px;
+  }
+}
+@media screen and (max-width: 490px) {
+  .hero-content h1 {
+    padding: auto;
+    font-size: 40px;
+  }
+}

@@ -1,0 +1,93 @@
+.sidebar-container {
+  /* max-width: 320px;
+  min-width: 290px; */
+  /* flex: 1; */
+  padding: 20px 10px 30px 40px;
+  width: 300px;
+  background-color: var(--green);
+  color: var(--white);
+
+  height: 100vh;
+  overflow-y: auto;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--lighter-grey);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--lightest-grey);
+  border-radius: 5px;
+  width: 4px;
+}
+
+.sidebar-logo img {
+  width: 80px;
+  height: 80px;
+}
+.sidebar-top .sidebar-tabs .active {
+  background-color: var(--white);
+  /* padding: 15px 0px 15px 20px; */
+  display: flex;
+  padding-left: 15px;
+  align-items: center;
+  height: 45px;
+  width: 190px;
+  border-radius: 8px;
+  color: var(--black);
+  font-weight: 600;
+}
+.sidebar-tabs a {
+  color: var(--white);
+}
+
+.sidebar-tabs {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+.sidebar-tabs li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.sidebar-tabs li img {
+  /* width: 16px;
+  height: 16px; */
+  width: 20.903px;
+  height: 16.722px;
+}
+
+.sidebar-hr {
+  margin-top: 30px;
+  border: 0.5px solid var(--lighter-grey);
+  width: 80%;
+}
+.sidebar-mid {
+  margin-top: 30px;
+}
+.sidebar-mid .chats {
+  background-color: #bb0808;
+  border-radius: 50%;
+  margin-left: 25px;
+  padding: 4px;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+}
+.sidebar-bottom {
+  margin-top: 50px;
+}

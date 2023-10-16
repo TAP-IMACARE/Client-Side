@@ -1,0 +1,278 @@
+/* changed class name */
+.home-dashboard-main {
+  margin-top: 12px;
+  display: flex;
+  gap: 15px;
+  padding: 0px 10px 35px 10px;
+  min-height: 100vh;
+}
+/* LEFT */
+.home-dasboard-left {
+  /* flex: 3; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.home-dasboard-left .schedule-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.schedule-container .schedule-app {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 210px;
+  height: 100px;
+  border-radius: 5px;
+  border: 0.469px solid var(--lighter-grey);
+  background: var(--white);
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+}
+.schedule-app-icon {
+  background-color: var(--light-green);
+  padding: 15px;
+  border-radius: 50%;
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+}
+.schedule-app img {
+  width: 16px;
+  height: 16px;
+}
+.schedule-app p {
+  font-size: 14px;
+  max-width: 120px;
+}
+
+.home-dasboard-left .upcomming-app {
+  min-height: 350px;
+  /* height: 400px; */
+  padding: 20px 32.006px 20px 20px;
+
+  border-radius: 5px;
+  border: 0.469px solid var(--lighter-grey);
+  background: var(--white);
+  box-shadow: 1.8746399879455566px 6.561239719390869px 15.934440612792969px 0px
+    rgba(0, 94, 93, 0.09);
+}
+
+.upcomming-app h4 {
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.home-dasboard-left .available-docs {
+  padding: 20px;
+
+  border-radius: 5px;
+  border: 0.469px solid var(--lighter-grey);
+}
+.available-docs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.available-docs-icon {
+  display: flex;
+  gap: 10px;
+}
+.available-docs-header .available-docs-icon .leftIcon {
+  padding: 5px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 0.501px solid var(--lighter-grey);
+
+  background: var(--white);
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+  cursor: pointer;
+}
+.available-docs-header .available-docs-icon .rightIcon {
+  padding: 5px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 0.501px solid var(--green);
+  background: var(--white);
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+  cursor: pointer;
+}
+.available-docs-header .available-docs-icon img {
+  width: 8px;
+  height: 10px;
+}
+.available-docs h4 {
+  font-weight: 500;
+}
+
+.available-docs-wrapper {
+  display: flex;
+  gap: 20px;
+}
+.available-docs-wrapper .available-doc {
+  margin-top: 18px;
+  height: 200px;
+  width: 160px;
+  border-radius: 5px;
+  border: 0.469px solid var(--lighter-grey);
+  background: var(--white);
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+}
+
+.available-doc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+.available-doc:hover {
+  transform: scale(1.06);
+  transition: all 0.6s ease-in-out;
+}
+
+.available-doc img {
+  width: 80px;
+  border-radius: 50%;
+}
+.available-doc .available-doc-details h5 {
+  color: var(--black);
+  font-size: 14px;
+  font-weight: 500;
+}
+.available-doc .available-doc-details p {
+  font-size: 12px;
+}
+
+/* RIGHT */
+.home-dashboard-right {
+  /* flex: 2; */
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.calender-wrapper {
+  /* background-color: blue; */
+  flex: 4;
+  padding: 28px;
+  border-radius: 5px;
+  /* border: 0.469px solid var(--lighter-grey); */
+  background: var(--white);
+  box-shadow: 1.8746399879455566px 6.561239719390869px 15.934440612792969px 0px
+    rgba(0, 94, 93, 0.09);
+}
+.picked-dates-container {
+  border-top: 0.5px solid var(--lighter-grey);
+  padding-top: 20px;
+
+  margin-top: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.picked-date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  border-radius: 9px;
+  background: var(--green);
+  width: 300px;
+  padding: 16px;
+  box-shadow: 2px 7px 17px 10px rgba(5, 75, 74, 0.09);
+  cursor: pointer;
+}
+.picked-date:hover {
+  /* transform: scale(1.04); */
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+  transition: all 0.25s ease-in-out;
+}
+.picked-date:nth-child(2),
+.picked-date:nth-child(3) {
+  background-color: var(--white);
+}
+
+#picked-doc {
+  color: var(--white);
+}
+.picked-doctor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-width: 180px;
+}
+.picked-doctor h4 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.picked-doctor p {
+  font-size: 14px;
+}
+.picked-date .picked-day {
+  width: 56px;
+  height: 57px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  background: var(--light-green);
+
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+}
+.picked-day p {
+  font-size: 12px;
+}
+.picked-day h5 {
+  font-size: 20px;
+}
+
+.patient-files-wrapper {
+  flex: 1;
+
+  padding: 20px 28.12px;
+  border-radius: 7.499px;
+  border: 0.469px solid var(--lighter-grey);
+  background: var(--white);
+  box-shadow: 1.8746399879455566px 6.561239719390869px 15.934440612792969px 0px
+    rgba(0, 94, 93, 0.09);
+}
+.patient-files-wrapper h5 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.patient-files {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+}
+.patient-file {
+  display: flex;
+  /* align-items: center; */
+  gap: 8px;
+}
+
+.file {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+.file p {
+  font-size: 15px;
+}

@@ -1,0 +1,15 @@
+.home-container {
+  display: flex;
+}
+
+.home-dashboard {
+  /* flex: 4; */
+  /* flex: 0 1 1100px; */
+  /* min-height: 100vh; */
+  /* 
+  height: 100vh; */
+  left: 300px;
+  position: relative;
+  width: calc(100% - 300px);
+  overflow-y: auto;
+}

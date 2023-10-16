@@ -1,0 +1,85 @@
+.plans-container {
+  height: 920px;
+  background-color: var(--white);
+  padding: 120px 80px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.plans-container h3 {
+  font-size: 35px;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+
+.plans-container .plans {
+  display: flex;
+  gap: 40px;
+}
+.plans .plan {
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.plans #selected_plan {
+  padding: 40px 60px;
+
+  border-radius: 10px;
+  background: var(--light-green);
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+}
+
+.plans .unselected_plan {
+  border: 1px solid var(--lightest-grey);
+  border-radius: 10px;
+}
+.plan .package {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  margin-left: -10px;
+}
+.plan .package h5 {
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+.package .price {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.package .price h4 {
+  font-size: 30px;
+  font-weight: 700;
+}
+.package p {
+  font-size: 14px;
+}
+
+.plan .plan-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.plan-list span {
+  margin-right: 8px;
+}
+.plan-list li {
+  font-size: 16px;
+}
+
+.plan .plan-btn {
+  margin-top: 5px;
+  text-align: center;
+  width: 180px;
+  height: 49px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  color: var(--white);
+  background: var(--green);
+}

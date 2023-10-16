@@ -1,0 +1,110 @@
+.PatientInfoContent-container {
+  background-color: var(--lightest-green);
+  min-height: 700px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 80px 80px 120px 80px;
+}
+.PatientInfoContent-header {
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+  color: var(--black);
+}
+.PatientInfoContent-header h3 {
+  font-size: 35px;
+  font-weight: 700;
+}
+.PatientInfoContent-header p {
+  font-size: 18px;
+  max-width: 75%;
+}
+
+.PatientInfoContent-content {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+/* LEFT COMPONENT */
+.PatientInfoContent-left {
+  max-width: 50%;
+}
+
+.PatientContent-left-container h4 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+.PatientContent-left-container p {
+  max-width: 301px;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+.PatientContent-left-container #freeDemo-btn {
+  text-align: center;
+  padding: 10px 14px;
+  border-radius: 10px;
+  color: var(--white);
+  background: var(--green);
+}
+
+/* RIGHT COMPONENT */
+.PatientInfoContent-right {
+  max-width: 50%;
+}
+.PatientInfoContent-right img {
+  width: 100%;
+  height: 320px;
+  /* transform: translateY(-10px); */
+}
+
+@media screen and (max-width: 820px) {
+  .PatientInfoContent-container {
+    padding: 32.998px 21.999px 54.997px 21.999px;
+  }
+
+  .PatientInfoContent-content {
+    margin-top: 40px;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .PatientInfoContent-header h3 {
+    font-size: 27px;
+  }
+  .PatientInfoContent-header p {
+    max-width: 100%;
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .PatientInfoContent-content {
+    flex-direction: column-reverse;
+    gap: 20px;
+  }
+  .PatientInfoContent-left h4 {
+    font-size: 22px;
+  }
+  .PatientInfoContent-content p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .PatientInfoContent-left {
+    text-align: center;
+    max-width: 100%;
+  }
+  .PatientContent-left-container p {
+    max-width: 100%;
+  }
+  .PatientInfoContent-right {
+    max-width: 100%;
+  }
+}
