@@ -34,14 +34,14 @@ const PatientInfoContent = () => {
             </div>
           </div>
           <div className="PatientInfoContent-right">
-            <img src={patientInfoImg} alt="" />
+            <img src={patientInfoImg} alt="info" />
           </div>
         </div>
       </div>
 
-      {/* <PatientAppointmentScheduling />
+      <PatientAppointmentScheduling />
       <PatientCommunication />
-      <PatnersContent /> */}
+      <PatnersContent />
     </div>
   );
 };

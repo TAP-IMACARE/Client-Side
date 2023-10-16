@@ -35,9 +35,7 @@
 .PatientInfoContent-left {
   max-width: 50%;
 }
-.PatientContent-left-container {
-  /* margin-left: 80px; */
-}
+
 .PatientContent-left-container h4 {
   font-size: 25px;
   margin-bottom: 20px;
@@ -52,7 +50,6 @@
   text-align: center;
   padding: 10px 14px;
   border-radius: 10px;
-  /* font-size: 18px; */
   color: var(--white);
   background: var(--green);
 }
@@ -77,11 +74,13 @@
     gap: 30px;
   }
 }
+
 @media screen and (max-width: 580px) {
   .PatientInfoContent-header h3 {
-    font-size: 30px;
+    font-size: 27px;
   }
   .PatientInfoContent-header p {
+    max-width: 100%;
     font-size: 18px;
     line-height: 24px;
   }
@@ -89,6 +88,9 @@
   .PatientInfoContent-content {
     flex-direction: column-reverse;
     gap: 20px;
+  }
+  .PatientInfoContent-left h4 {
+    font-size: 22px;
   }
   .PatientInfoContent-content p {
     font-size: 18px;
