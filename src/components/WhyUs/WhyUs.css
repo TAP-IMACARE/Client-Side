@@ -22,7 +22,7 @@
 .whyUs-top p {
   font-size: 18px;
   line-height: 27px;
-  width: 61%;
+  max-width: 61%;
 }
 
 /* BOTTOM */
@@ -110,7 +110,7 @@
     width: 89%;
   }
   .whyUs-top p {
-    width: 69%;
+    max-width: 100%;
   }
 
   .whyUs-bottom {
@@ -147,12 +147,12 @@
     font-size: 27px;
     font-weight: 700;
     width: 100%;
-    line-height: 35.198px;
+    line-height: 35px;
   }
   .whyUs-top p {
     font-size: 18px;
     line-height: 27px;
-    width: 61%;
+    max-width: 100%;
   }
 
   .whyUs-bottom {
