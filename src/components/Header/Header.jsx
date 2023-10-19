@@ -28,6 +28,7 @@ const Header = () => {
           >
             <img src={imacareLogo} alt="logo" />
           </LinkRoll>
+          {/* Hamburger Menu */}
           <div className="hamburger-menu" onClick={toggleHamburger}>
             <img src={harmburger} alt="menu" />
           </div>
