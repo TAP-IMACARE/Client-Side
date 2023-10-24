@@ -17,6 +17,9 @@ import Completed from "./dashboards/appointment/Completed.jsx";
 import Upcoming from "./dashboards/appointment/Upcoming.jsx";
 import Canceled from "./dashboards/appointment/Canceled.jsx";
 
+import BookAppointment from "./dashboards/Overview/bookAppointment/BookAppointment.jsx";
+import SetAppointment from "./dashboards/Overview/setAppointment/SetAppointment.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -41,6 +44,12 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Overview />,
+        // children: [
+        //   {
+        //     path: "book-appointment",
+        //     element: <BookAppointment />,
+        //   },
+        // ],
       },
       {
         path: "/dashboard/appointment",
@@ -59,6 +68,14 @@ const router = createBrowserRouter([
             element: <Canceled />,
           },
         ],
+      },
+      {
+        path: "/dashboard/book-appointment",
+        element: <BookAppointment />,
+      },
+      {
+        path: "/dashboard/set-appointment",
+        element: <SetAppointment />,
       },
       {
         path: "prescription",
