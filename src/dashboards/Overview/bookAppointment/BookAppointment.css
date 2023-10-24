@@ -1,0 +1,62 @@
+.bookAppointment-container {
+  margin: 30px 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.bookAppointment {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  border-radius: 8.186px;
+  border: 0.5px solid var(--lighter-grey);
+  background: var(--white);
+  box-shadow: 1.95085px 6.82798px 16.58223px 0px rgba(0, 94, 93, 0.09);
+}
+
+.bookAppointment .doctor-portfolio {
+  width: 100%;
+  padding: 15px 15px;
+}
+
+.bookAppointment .doctor-portfolio h3 {
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.bookAppointment .doctor-portfolio h5 {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+.bookAppointment .doctor-portfolio p {
+  margin-top: 10px;
+  font-size: 14.735px;
+  max-width: 361px;
+}
+
+.bookAppointment .doctor-portfolio .bottomContent {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  align-items: center;
+}
+.bookAppointment .doctor-portfolio .bottomContent .doc-rating {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  font-weight: 500;
+}
+
+.doctor-portfolio #appointment-btn {
+  text-align: center;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 15px;
+  color: var(--white);
+  border: 1px solid var(--green);
+  background-color: var(--green);
+}
