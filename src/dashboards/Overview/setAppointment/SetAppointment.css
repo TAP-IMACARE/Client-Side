@@ -122,3 +122,14 @@ form button {
   border-radius: 10px;
   cursor: pointer;
 }
+/* .ReactModal__Overlay {
+  opacity: 0.5;
+  transition: opacity 00.001s linear;
+}
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+} */
