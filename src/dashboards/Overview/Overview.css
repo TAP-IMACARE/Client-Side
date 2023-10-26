@@ -31,13 +31,13 @@
   border-radius: 5px;
   border: 0.469px solid var(--lighter-grey);
   background: var(--white);
-  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+  /* box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09); */
 }
 .schedule-app-icon {
   background-color: var(--light-green);
   padding: 15px;
   border-radius: 50%;
-  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+  /* box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09); */
 }
 .schedule-app img {
   width: 16px;
@@ -56,8 +56,8 @@
   border-radius: 5px;
   border: 0.469px solid var(--lighter-grey);
   background: var(--white);
-  box-shadow: 1.8746399879455566px 6.561239719390869px 15.934440612792969px 0px
-    rgba(0, 94, 93, 0.09);
+  /* box-shadow: 1.8746399879455566px 6.561239719390869px 15.934440612792969px 0px
+    rgba(0, 94, 93, 0.09); */
 }
 
 .upcomming-app h4 {
@@ -89,7 +89,7 @@
   border: 0.501px solid var(--lighter-grey);
 
   background: var(--white);
-  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+  /* box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09); */
   cursor: pointer;
 }
 .available-docs-header .available-docs-icon .rightIcon {
@@ -100,7 +100,7 @@
   border-radius: 50%;
   border: 0.501px solid var(--green);
   background: var(--white);
-  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+  /* box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09); */
   cursor: pointer;
 }
 .available-docs-header .available-docs-icon img {
@@ -122,7 +122,7 @@
   border-radius: 5px;
   border: 0.469px solid var(--lighter-grey);
   background: var(--white);
-  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+  /* box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09); */
 }
 
 .available-doc {
@@ -165,7 +165,7 @@
   flex: 4;
   padding: 28px;
   border-radius: 5px;
-  /* border: 0.469px solid var(--lighter-grey); */
+  border: 0.469px solid var(--lighter-grey);
   background: var(--white);
   box-shadow: 1.8746399879455566px 6.561239719390869px 15.934440612792969px 0px
     rgba(0, 94, 93, 0.09);
