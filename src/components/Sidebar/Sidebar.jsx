@@ -22,12 +22,24 @@ import { useMemo } from "react";
 const CustomNav = ({ to, children, activeIcon, inactiveIcon }) => {
   const { pathname } = useLocation();
   const isActive = useMemo(() => {
+    let link = to;
     const routeList = to.split("/").filter(Boolean);
+    const pathList = pathname.split("/").filter(Boolean);
+    console.log(routeList);
     const exactPath = routeList[1];
-    if (routeList.length === 1) {
-      return to === pathname;
+
+    if (pathname === "/dashboard/book-appointment" && routeList.length === 1) {
+      console.log("entered");
+      link = "/dashboard/book-appointment";
     }
-    return pathname.includes(exactPath);
+    if (pathname === "/dashboard/set-appointment" && routeList.length === 1) {
+      console.log("entered");
+      link = "/dashboard/set-appointment";
+    }
+    if (routeList.length === 1) {
+      return link === pathname;
+    }
+    return pathList[1] === exactPath;
   }, [pathname, to]);
   return (
     <Link to={to} className={isActive ? "active" : ""}>
