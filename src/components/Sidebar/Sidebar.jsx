@@ -25,15 +25,14 @@ const CustomNav = ({ to, children, activeIcon, inactiveIcon }) => {
     let link = to;
     const routeList = to.split("/").filter(Boolean);
     const pathList = pathname.split("/").filter(Boolean);
-    console.log(routeList);
+    // console.log(routeList);
     const exactPath = routeList[1];
 
     if (pathname === "/dashboard/book-appointment" && routeList.length === 1) {
-      console.log("entered");
+      // console.log("entered");
       link = "/dashboard/book-appointment";
     }
     if (pathname === "/dashboard/set-appointment" && routeList.length === 1) {
-      console.log("entered");
       link = "/dashboard/set-appointment";
     }
     if (routeList.length === 1) {
@@ -87,7 +86,7 @@ const Sidebar = () => {
           </CustomNav>
 
           <CustomNav
-            to={"/dashboard/payments"}
+            to={"/dashboard/payments/wallet"}
             activeIcon={activePayment}
             inactiveIcon={paymentIcon}
           >
