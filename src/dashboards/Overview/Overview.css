@@ -3,7 +3,7 @@
   margin-top: 12px;
   display: flex;
   gap: 15px;
-  padding: 0px 10px 35px 10px;
+  margin: 0px 10px 35px 15px;
   min-height: 100vh;
 }
 /* LEFT */
@@ -26,18 +26,19 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
-  width: 210px;
+  width: 220px;
   height: 100px;
   border-radius: 5px;
-  border: 0.469px solid var(--lighter-grey);
+  border-top: 0.469px solid var(--lighter-grey);
+  border-left: 0.469px solid var(--lighter-grey);
   background: var(--white);
-  /* box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09); */
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
 }
 .schedule-app-icon {
   background-color: var(--light-green);
   padding: 15px;
   border-radius: 50%;
-  /* box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09); */
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
 }
 .schedule-app img {
   width: 16px;
@@ -50,14 +51,15 @@
 
 .home-dasboard-left .upcomming-app {
   min-height: 350px;
-  /* height: 400px; */
+
   padding: 20px 32.006px 20px 20px;
 
   border-radius: 5px;
-  border: 0.469px solid var(--lighter-grey);
+  border-left: 0.469px solid var(--lighter-grey);
+  border-top: 0.469px solid var(--lighter-grey);
   background: var(--white);
-  /* box-shadow: 1.8746399879455566px 6.561239719390869px 15.934440612792969px 0px
-    rgba(0, 94, 93, 0.09); */
+  box-shadow: 1.8746399879455566px 6.561239719390869px 15.934440612792969px 0px
+    rgba(0, 94, 93, 0.09);
 }
 
 .upcomming-app h4 {
@@ -163,7 +165,7 @@
 .calender-wrapper {
   /* background-color: blue; */
   flex: 4;
-  padding: 28px;
+  padding: 20px 10px 20px 10px;
   border-radius: 5px;
   border: 0.469px solid var(--lighter-grey);
   background: var(--white);
