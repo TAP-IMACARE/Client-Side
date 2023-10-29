@@ -1,6 +1,6 @@
 .precscription-container {
   margin: 30px 20px;
-  border: 0.5px solid var(--lighter-grey);
+  /* border: 0.5px solid var(--lighter-grey); */
   border-radius: 8px;
   min-height: 100vh;
 }
