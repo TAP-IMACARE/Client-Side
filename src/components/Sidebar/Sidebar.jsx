@@ -86,7 +86,7 @@ const Sidebar = () => {
           </CustomNav>
 
           <CustomNav
-            to={"/dashboard/payments/wallet"}
+            to={"/dashboard/payments"}
             activeIcon={activePayment}
             inactiveIcon={paymentIcon}
           >
@@ -94,7 +94,7 @@ const Sidebar = () => {
           </CustomNav>
 
           <CustomNav
-            to={"/dashboard/settings"}
+            to={"/dashboard/settings/info"}
             activeIcon={activeSettings}
             inactiveIcon={settingsIcon}
           >
