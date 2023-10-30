@@ -4,12 +4,10 @@ import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
-import Paper from "@mui/material/Paper";
 import { styled } from "@mui/material/styles";
 
 import img1 from "../../assets/dashboard assets/Ubong.svg";
 import img2 from "../../assets/dashboard assets/Chinedu.svg";
-import DataTable from "react-data-table-component";
 
 function createData(name, item1, item2, item3, item4) {
   return { name, item1, item2, item3, item4 };
