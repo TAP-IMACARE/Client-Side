@@ -10,7 +10,6 @@ import { styled } from "@mui/material/styles";
 import img1 from "../../assets/dashboard assets/Ubong.svg";
 import img2 from "../../assets/dashboard assets/Chinedu.svg";
 import Alice from "../../assets/dashboard assets/Alice.svg";
-import DataTable from "react-data-table-component";
 
 function createData(name, item1, item2, item3, item4, item5, item6) {
   return { name, item1, item2, item3, item4, item5, item6 };
@@ -128,7 +127,6 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 const PrescriptionTable = () => {
   return (
     <>
-      {/* <DataTable columns={columns} data={data} /> */}
       <TableContainer component={Paper}>
         <Table sx={{ minWidth: 650 }} aria-label="simple table">
           <TableHead>
