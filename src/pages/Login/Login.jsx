@@ -10,16 +10,19 @@ const Login = () => {
   return (
     <div className="login-container">
       {/* Div of the form */}
-      <div className="login-form">
-        <h1>Hi, Welcome Back!</h1>
-        <p id="login-text">Log in to your account</p>
+      <div className="login-leftContainer">
+        {/* <h1>Hi, Welcome Back!</h1>
+        <p id="login-text">Log in to your account</p> */}
 
-        <form className="loginForm">
+        <form className="login-form">
+          <h1>Hi, Welcome Back!</h1>
+          <p id="login-text">Log in to your account</p>
+
           <div className="login-form-group">
             <label>Email Address</label>
             <div className="login-input-with-icon">
               <img src={MailImage} alt="Icon" className="login-icon" />
-              <input type="text" placeholder="Enter your text" />
+              <input type="text" placeholder="Enter your Email" />
             </div>
           </div>
           <div className="login-form-group">
@@ -63,10 +66,11 @@ const Login = () => {
             <img src={GoogleImg} />
             Sign in with google
           </button>
+
+          <p className="login-account-p">
+            Don't have an account? <span>Sign up</span>
+          </p>
         </form>
-        <p className="login-account-p">
-          Don't have an account? <span>Sign up</span>
-        </p>
       </div>
 
       {/* Div of the image */}
