@@ -7,8 +7,11 @@ import img1 from "../../../assets/dashboard assets/Ubong_b.png";
 import TopComponent from "../../topComponent/TopComponent";
 import Calendar from "../../../components/calender/Calender";
 import ModalContainer from "../Modal/ModalContainer";
+import Time from "../../../components/Time/Time";
 
 const SetAppointment = () => {
+  const [value, setValue] = useState(null);
+
   const [modal, setModal] = useState(false);
   const [meeting, setMeeting] = useState("");
 
@@ -20,6 +23,7 @@ const SetAppointment = () => {
       return false;
     }
     console.log("Meeting_Type: ", meeting);
+    console.log("Date:", value.format("DD-MMM-YYYY"));
     setModal(true);
   };
   return (
@@ -52,13 +56,19 @@ const SetAppointment = () => {
                 Select Date
               </label>
               <div className="calender-wrapper2">
-                <Calendar id="calender" />
+                <Calendar
+                  id="calender"
+                  onChange={(newValue) => setValue(newValue)}
+                  value={value}
+                />
               </div>
 
               <label htmlFor="time" className="span">
                 Select Time
               </label>
-              <div className="SetAppointment-time">Time picker goes here!!</div>
+              <div className="SetAppointment-time">
+                <Time />
+              </div>
 
               <div className="SetAppointment-radioBTN">
                 <div className="virtual">
