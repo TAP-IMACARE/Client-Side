@@ -2,7 +2,7 @@
 import img1 from "../../../assets/dashboard assets/Ubong_b.png";
 import img2 from "../../../assets/dashboard assets/Alice_b.png";
 import img3 from "../../../assets/dashboard assets/Chinedu_b.png";
-import img4 from "../../../assets/dashboard assets/Bisola_b.png";
+// import img4 from "../../../assets/dashboard assets/Bisola_b.png";
 import star from "../../../assets/dashboard assets/star.svg";
 
 import TopComponent from "../../topComponent/TopComponent";
@@ -22,7 +22,7 @@ const BookAppointment = () => {
       <div className="bookAppointment-container">
         {/* Card 1 */}
         <div className="bookAppointment">
-          <img src={img1} alt="avatar" />
+          <img src={img1} alt="avatar" className="doc-avatar" />
 
           <div className="doctor-portfolio">
             <h3>Dr. Ubong Etuk</h3>
@@ -51,7 +51,7 @@ const BookAppointment = () => {
 
         {/* CARD 2 */}
         <div className="bookAppointment">
-          <img src={img2} alt="avatar" />
+          <img src={img2} alt="avatar" className="doc-avatar" />
 
           <div className="doctor-portfolio">
             <h3>Dr. Alice Eze</h3>
@@ -81,7 +81,7 @@ const BookAppointment = () => {
 
         {/* CARD 3 */}
         <div className="bookAppointment">
-          <img src={img3} alt="avatar" />
+          <img src={img3} alt="avatar" className="doc-avatar" />
 
           <div className="doctor-portfolio">
             <h3>Dr. Chinedu Okeke</h3>
