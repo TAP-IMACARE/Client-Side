@@ -1,5 +1,5 @@
 .bookAppointment-container {
-  margin: 30px 20px;
+  margin: 0px 20px;
 
   display: flex;
   flex-direction: column;
@@ -14,7 +14,12 @@
   border-radius: 8.186px;
   border: 0.5px solid var(--lighter-grey);
   background: var(--white);
+  height: 200px;
   box-shadow: 1.95085px 6.82798px 16.58223px 0px rgba(0, 94, 93, 0.09);
+}
+
+.bookAppointment .doc-avatar {
+  height: 200px;
 }
 
 .bookAppointment .doctor-portfolio {
