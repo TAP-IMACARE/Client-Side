@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Plans.css";
-import PlansMobile from "./PlansMobile";
+// import PlansMobile from "./PlansMobile";
 
 const Plans = () => {
   return (
