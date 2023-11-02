@@ -1,24 +1,37 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 import ImaImg from "../../assets/Imacare-5.png";
 import GoogleImg from "../../assets/google-1.png";
-import LockImg from "../../assets/lock.png";
+// import LockImg from "../../assets/lock.png";
 import MailImage from "../../assets/mail.png";
 import ErrorImg from "../../assets/error.png";
 import LoginVisImg from "../../assets/visibility_off.png";
+import lock from "../../assets/lock.svg";
 import on from "../../assets/visibility_on.png";
 import { useState } from "react";
 
 const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [showPassword, setShowPassword] = useState("");
+  const [showPassword, setShowPassword] = useState(false);
 
   const [visible, setVisible] = useState(false);
+  const navigate = useNavigate();
 
   const visibility = () => {
-    setVisible(visible);
+    setVisible(!visible);
     setShowPassword((prev) => !prev);
+  };
+
+  const handleValidate = (e) => {
+    e.preventDefault();
+
+    if (email === "imacare@gmail.com" && password === "imacare") {
+      navigate("/dashboard");
+    } else {
+      alert("wrong details");
+      return false;
+    }
   };
 
   return (
@@ -28,7 +41,7 @@ const Login = () => {
         {/* <h1>Hi, Welcome Back!</h1>
         <p id="login-text">Log in to your account</p> */}
 
-        <form className="login-form">
+        <form className="login-form" onSubmit={handleValidate}>
           <h1>Hi, Welcome Back!</h1>
           <p id="login-text">Log in to your account</p>
 
@@ -48,13 +61,13 @@ const Login = () => {
             <label>Password</label>
             <div className="login-input-with-icon">
               <span className="login-icon">
-                <img src={LockImg} alt="Icon" />
+                <img src={lock} alt="Icon" />
               </span>
               <input
                 type={showPassword ? "text" : "password"}
                 placeholder="Enter your password"
                 id="login-unique-form"
-                value={showPassword}
+                value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
               <span className="login-visibility-icon">
