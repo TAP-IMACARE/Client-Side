@@ -21,13 +21,13 @@ const PersonalInfo = () => {
         <div className="name-control">
           <div className="firstName">
             <label htmlFor="firstName">First Name</label> <br />
-            <input type="text" id="input" />
+            <input type="text" id="input" placeholder="Tosin" />
             <img src={contactIcon} alt="" id="icon" />
           </div>
 
           <div className="lastName">
             <label htmlFor="lastName">Last Name</label> <br />
-            <input type="text" id="lastName" />{" "}
+            <input type="text" id="lastName" placeholder="Wale" />
             <img src={contactIcon} alt="" id="icon" />
           </div>
         </div>
