@@ -1,8 +1,12 @@
 .dashboard-Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 0.832px solid var(--lighter-grey);
   background: var(--white);
   height: 60px;
-  width: 970px;
+  /* width: 970px; */
+  max-width: 1400px;
 
   /* padding: 0 40px; */
   z-index: 100;
@@ -19,8 +23,8 @@
   align-items: center;
 
   height: 100%;
-  max-width: 950px;
-  padding: 0 40px;
+  width: 80vw;
+  padding: 0 90px 0 40px;
 }
 .dashboard-Navbar-container .navbar-search {
   position: relative;
