@@ -1,5 +1,5 @@
 import "./PatientCommunication.css";
-import patientComm from "../../assets/LandingPageAssets/patientComm.png";
+import patientComm from "../../assets/landingPageAssets/patientComm.png";
 
 const PatientCommunication = () => {
   return (
