@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Login.css";
 import ImaImg from "../../assets/Imacare-5.png";
 import GoogleImg from "../../assets/google-1.png";
@@ -5,8 +6,21 @@ import LockImg from "../../assets/lock.png";
 import MailImage from "../../assets/mail.png";
 import ErrorImg from "../../assets/error.png";
 import LoginVisImg from "../../assets/visibility_off.png";
+import on from "../../assets/visibility_on.png";
+import { useState } from "react";
 
 const Login = () => {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [showPassword, setShowPassword] = useState("");
+
+  const [visible, setVisible] = useState(false);
+
+  const visibility = () => {
+    setVisible(visible);
+    setShowPassword((prev) => !prev);
+  };
+
   return (
     <div className="login-container">
       {/* Div of the form */}
@@ -22,7 +36,12 @@ const Login = () => {
             <label>Email Address</label>
             <div className="login-input-with-icon">
               <img src={MailImage} alt="Icon" className="login-icon" />
-              <input type="text" placeholder="Enter your Email" />
+              <input
+                type="text"
+                placeholder="Enter your Email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
             </div>
           </div>
           <div className="login-form-group">
@@ -32,12 +51,20 @@ const Login = () => {
                 <img src={LockImg} alt="Icon" />
               </span>
               <input
-                type="text"
+                type={showPassword ? "text" : "password"}
                 placeholder="Enter your password"
                 id="login-unique-form"
+                value={showPassword}
+                onChange={(e) => setPassword(e.target.value)}
               />
               <span className="login-visibility-icon">
-                <img src={LoginVisImg} alt="Visibility Off" />
+                <img
+                  src={visible ? on : LoginVisImg}
+                  alt="Visibility Off"
+                  width={20}
+                  height={20}
+                  onClick={visibility}
+                />
               </span>
             </div>
           </div>
@@ -75,7 +102,10 @@ const Login = () => {
 
       {/* Div of the image */}
       <div className="login-medic-lady">
-        <img src={ImaImg} alt="ImaCare" />
+        <Link to="/">
+          {" "}
+          <img src={ImaImg} alt="ImaCare" />
+        </Link>
         <div className="login-copyright">
           <h1>Find the right healthcare provider</h1>
           <span>ⓒ IMACARE 2023. All Rights Reserved</span>

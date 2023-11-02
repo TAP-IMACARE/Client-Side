@@ -6,7 +6,7 @@ import img1 from "../../../assets/dashboard assets/Ubong_b.png";
 
 import TopComponent from "../../topComponent/TopComponent";
 import Calendar from "../../../components/calender/Calender";
-import ModalContainer from "../Modal/ModalContainer";
+import ModalContainer from "../modal/ModalContainer";
 import Time from "../../../components/Time/Time";
 
 const SetAppointment = () => {
