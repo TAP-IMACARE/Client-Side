@@ -4,11 +4,13 @@
   display: flex;
   gap: 15px;
   margin: 0px 10px 35px 15px;
+  max-width: 1400px;
   min-height: 100vh;
+  /* background-color: red; */
 }
 /* LEFT */
 .home-dasboard-left {
-  /* flex: 3; */
+  flex: 2;
 
   display: flex;
   flex-direction: column;
@@ -50,6 +52,7 @@
 }
 
 .home-dasboard-left .upcomming-app {
+  width: 100%;
   min-height: 350px;
 
   padding: 20px 32.006px 20px 20px;
@@ -120,11 +123,11 @@
 .available-docs-wrapper .available-doc {
   margin-top: 18px;
   height: 200px;
-  width: 160px;
+  min-width: 160px;
   border-radius: 5px;
   border: 0.469px solid var(--lighter-grey);
-  background: var(--white);
-  /* box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09); */
+  background-color: var(--white);
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
 }
 
 .available-doc {
@@ -137,7 +140,7 @@
   cursor: pointer;
 }
 .available-doc:hover {
-  transform: scale(1.06);
+  transform: scale(1.05);
   transition: all 0.6s ease-in-out;
 }
 
@@ -156,7 +159,7 @@
 
 /* RIGHT */
 .home-dashboard-right {
-  /* flex: 2; */
+  flex: 1;
 
   display: flex;
   flex-direction: column;
@@ -186,11 +189,13 @@
 .picked-date {
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
+  justify-content: space-evenly;
   gap: 25px;
   border-radius: 9px;
   background: var(--green);
-  width: 300px;
+  /* width: 300px; */
+  width: 92%;
   padding: 16px;
   box-shadow: 2px 7px 17px 10px rgba(5, 75, 74, 0.09);
   cursor: pointer;
@@ -243,7 +248,6 @@
 
 .patient-files-wrapper {
   flex: 1;
-
   padding: 20px 28.12px;
   border-radius: 7.499px;
   border: 0.469px solid var(--lighter-grey);
