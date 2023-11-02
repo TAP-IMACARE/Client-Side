@@ -8,9 +8,11 @@ import TopComponent from "../../topComponent/TopComponent";
 import Calendar from "../../../components/calender/Calender";
 import ModalContainer from "../modal/ModalContainer";
 import Time from "../../../components/Time/Time";
+import dayjs from "dayjs";
 
 const SetAppointment = () => {
-  const [value, setValue] = useState(null);
+  const [selectedDate, setSelectedDate] = useState(null);
+  const [selectedTime, setSelectedTime] = useState(null);
 
   const [modal, setModal] = useState(false);
   const [meeting, setMeeting] = useState("");
@@ -18,12 +20,13 @@ const SetAppointment = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!meeting) {
-      alert("Choose a meeting type..!!");
+    if (!meeting || selectedDate === null || selectedTime === null) {
+      alert("Please select all fields..!!");
       return false;
     }
     console.log("Meeting_Type: ", meeting);
-    console.log("Date:", value.format("DD-MMM-YYYY"));
+    console.log("Date:", selectedDate.format("DD-MMM-YYYY"));
+    console.log("Time:", selectedTime.format("hh:mm a"));
     setModal(true);
   };
   return (
@@ -58,8 +61,8 @@ const SetAppointment = () => {
               <div className="calender-wrapper2">
                 <Calendar
                   id="calender"
-                  onChange={(newValue) => setValue(newValue)}
-                  value={value}
+                  onChange={(newValue) => setSelectedDate(newValue)}
+                  value={selectedDate}
                 />
               </div>
 
@@ -67,7 +70,10 @@ const SetAppointment = () => {
                 Select Time
               </label>
               <div className="SetAppointment-time">
-                <Time />
+                <Time
+                  value={selectedTime}
+                  onChange={(newValue) => setSelectedTime(newValue)}
+                />
               </div>
 
               <div className="SetAppointment-radioBTN">
