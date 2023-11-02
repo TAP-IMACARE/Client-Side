@@ -13,7 +13,8 @@ export default function Calendar({ onChange, value }) {
         <DateCalendar
           disablePast
           sx={{
-            maxHeight: "290px",
+            maxHeight: 300,
+            // maxWidth: 400,
             // paddingBottom: "80px",
             // borderBottom: "0.5px solid #D1D1D1",
           }}
