@@ -74,7 +74,7 @@ const DoctorTable = () => {
   return (
     <>
       <TableContainer>
-        <Table sx={{ width: 500 }} aria-label="simple table">
+        <Table sx={{ maxxWidth: 500 }} aria-label="simple table">
           <TableHead>
             <TableRow>
               <TableCell>Profile</TableCell>
