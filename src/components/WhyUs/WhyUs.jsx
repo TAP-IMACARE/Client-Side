@@ -1,8 +1,8 @@
-import img1 from "../../assets/LandingPage assets/portrait-1.svg";
-import img2 from "../../assets/LandingPage assets/portrait-2.svg";
-import img3 from "../../assets/LandingPage assets/portrait-3.svg";
-import arrowUp from "../../assets/LandingPage assets/arrowUp-icon.svg";
-import arrowDown from "../../assets/LandingPage assets/arrowDown-icon.svg";
+import img1 from "../../assets/LandingPageAssets/portrait-1.svg";
+import img2 from "../../assets/LandingPageAssets/portrait-2.svg";
+import img3 from "../../assets/LandingPageAssets/portrait-3.svg";
+import arrowUp from "../../assets/LandingPageAssets/arrowUp-icon.svg";
+import arrowDown from "../../assets/LandingPageAssets/arrowDown-icon.svg";
 import { useState } from "react";
 import "./WhyUs.css";
 

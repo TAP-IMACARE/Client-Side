@@ -1,5 +1,5 @@
 import "./PatientAppointmentScheduling.css";
-import img from "../../assets/LandingPage assets/setAppointment.png";
+import img from "../../assets/LandingPageAssets/setAppointment.png";
 
 const PatientAppointmentScheduling = () => {
   return (

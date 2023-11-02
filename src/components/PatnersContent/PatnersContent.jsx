@@ -1,8 +1,8 @@
-import logo1 from "../../assets/LandingPage assets/REDDINGTON-LOGO.svg";
-import logo2 from "../../assets/LandingPage assets/sacred heart.svg";
-import logo3 from "../../assets/LandingPage assets/EVERCARE_LOGO.svg";
-import logo4 from "../../assets/LandingPage assets/Kelina-Logo-1.svg";
-import logo5 from "../../assets/LandingPage assets/limi hospital.svg";
+import logo1 from "../../assets/LandingPageAssets/REDDINGTON-LOGO.svg";
+import logo2 from "../../assets/LandingPageAssets/sacred heart.svg";
+import logo3 from "../../assets/LandingPageAssets/EVERCARE_LOGO.svg";
+import logo4 from "../../assets/LandingPageAssets/Kelina-Logo-1.svg";
+import logo5 from "../../assets/LandingPageAssets/limi hospital.svg";
 import "./PatnersContent.css";
 
 const PatnersContent = () => {

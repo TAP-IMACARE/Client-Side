@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Link as LinkRoll } from "react-scroll";
 
-import imacareLogo from "../../assets/LandingPage assets/imacareLogo.png";
+import imacareLogo from "../../assets/LandingPageAssets/imacareLogo.png";
 import harmburger from "../../assets/hamburger-menu.svg";
 import MobileHeader from "./MobileHeader";
 

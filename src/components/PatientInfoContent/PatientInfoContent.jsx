@@ -1,6 +1,6 @@
 import "./PatientInfoContent.css";
 import { Link } from "react-router-dom";
-import patientInfoImg from "../../assets/LandingPage assets/patientInfo.png";
+import patientInfoImg from "../../assets/LandingPageAssets/patientInfo.png";
 // import patientInfoImg from "../../assets/LandingPage assets/patient dashboard product.png";
 import PatientAppointmentScheduling from "../PatientAppointmentScheduling/PatientAppointmentScheduling";
 import PatientCommunication from "../PatientComm/PatientCommunication";
