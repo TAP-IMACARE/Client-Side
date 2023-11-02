@@ -26,7 +26,7 @@ const Login = () => {
   const handleValidate = (e) => {
     e.preventDefault();
 
-    if (email === "imacare@gmail.com" && password === "imacare") {
+    if (email === "Tosin@gmail.com" && password === "imacare") {
       navigate("/dashboard");
     } else {
       alert("wrong details");
