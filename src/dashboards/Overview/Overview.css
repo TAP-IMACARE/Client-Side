@@ -118,7 +118,7 @@
 
 .available-docs-wrapper {
   display: flex;
-  gap: 20px;
+  gap: 25px;
 }
 .available-docs-wrapper .available-doc {
   margin-top: 18px;
