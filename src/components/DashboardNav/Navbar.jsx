@@ -1,6 +1,7 @@
 import "./Navbar.css";
 import searchIcon from "../../assets/dashboard assets/search-icon.svg";
 import notificationIcon from "../../assets/dashboard assets/notification-icon.svg";
+import EllipseIcon from "../../assets/dashboard assets/Ellipse.svg";
 import userIcon from "../../assets/dashboard assets/Tosin Wale.svg";
 
 const Navbar = () => {
@@ -13,12 +14,14 @@ const Navbar = () => {
         </form>
 
         <div className="navbar-right">
-          <img
-            className="notification-icon"
-            src={notificationIcon}
-            alt="logo"
-          />
-
+          <div className="notification-container">
+            <img
+              className="notification-icon"
+              src={notificationIcon}
+              alt="logo"
+            />
+            <img className="ellipse" src={EllipseIcon} alt="icon" />
+          </div>
           <div className="profile">
             <span>Tosin Wale</span>
 

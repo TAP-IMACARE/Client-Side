@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Link as LinkRoll } from "react-scroll";
 
-import imacareLogo from "../../assets/LandingPage assets/imacare-logo.png";
+import imacareLogo from "../../assets/landingPageAssets/imacareLogo.png";
 import harmburger from "../../assets/hamburger-menu.svg";
 import MobileHeader from "./MobileHeader";
 
@@ -28,6 +28,7 @@ const Header = () => {
           >
             <img src={imacareLogo} alt="logo" />
           </LinkRoll>
+          {/* Hamburger Menu */}
           <div className="hamburger-menu" onClick={toggleHamburger}>
             <img src={harmburger} alt="menu" />
           </div>

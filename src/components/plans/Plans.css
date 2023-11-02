@@ -1,5 +1,5 @@
 .plans-container {
-  height: 920px;
+  min-height: 920px;
   background-color: var(--white);
   padding: 120px 80px;
 
@@ -82,4 +82,10 @@
   border-radius: 10px;
   color: var(--white);
   background: var(--green);
+}
+
+@media screen and (max-width: 920px) {
+  .plans-container .plans {
+    gap: 15px;
+  }
 }

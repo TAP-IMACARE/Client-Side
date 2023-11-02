@@ -2,7 +2,15 @@
   border-bottom: 0.832px solid var(--lighter-grey);
   background: var(--white);
   height: 60px;
-  padding: 0 40px;
+  width: 970px;
+
+  /* padding: 0 40px; */
+  z-index: 100;
+
+  position: fixed;
+  top: 0px;
+
+  overflow: hidden;
 }
 
 .dashboard-Navbar-container {
@@ -12,6 +20,7 @@
 
   height: 100%;
   max-width: 950px;
+  padding: 0 40px;
 }
 .dashboard-Navbar-container .navbar-search {
   position: relative;
@@ -60,6 +69,10 @@
   height: 100%;
 }
 
+.navbar-right .notification-container {
+  display: flex;
+  position: relative;
+}
 .navbar-right .notification-icon {
   width: 27px;
   height: 27px;
@@ -69,6 +82,14 @@
   cursor: pointer;
 
   box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+}
+.navbar-right .ellipse {
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  right: 4.996px;
+  right: 7px;
+  top: 4px;
 }
 .navbar-right .profile {
   display: flex;

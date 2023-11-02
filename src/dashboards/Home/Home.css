@@ -1,5 +1,8 @@
 .home-container {
   display: flex;
+
+  /* Same as dashboard nav height */
+  margin-top: 60px;
 }
 
 .home-dashboard {

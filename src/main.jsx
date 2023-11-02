@@ -17,6 +17,13 @@ import Completed from "./dashboards/appointment/Completed.jsx";
 import Upcoming from "./dashboards/appointment/Upcoming.jsx";
 import Canceled from "./dashboards/appointment/Canceled.jsx";
 
+import BookAppointment from "./dashboards/Overview/bookAppointment/BookAppointment.jsx";
+import SetAppointment from "./dashboards/Overview/setAppointment/SetAppointment.jsx";
+import Wallet from "./dashboards/payments/Wallet.jsx";
+import MakePayment from "./dashboards/payments/MakePayment.jsx";
+import PersonalInfo from "./dashboards/settings/PersonalInfo.jsx";
+import Files from "./dashboards/settings/Files.jsx";
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -61,16 +68,42 @@ const router = createBrowserRouter([
         ],
       },
       {
+        path: "/dashboard/book-appointment",
+        element: <BookAppointment />,
+      },
+      {
+        path: "/dashboard/set-appointment",
+        element: <SetAppointment />,
+      },
+      {
         path: "prescription",
         element: <Prescription />,
       },
       {
-        path: "payments",
+        path: "/dashboard/payments",
         element: <Payments />,
+      },
+      {
+        path: "/dashboard/payments/wallet",
+        element: <Wallet />,
+      },
+      {
+        path: "/dashboard/payments/make-payment",
+        element: <MakePayment />,
       },
       {
         path: "settings",
         element: <Settings />,
+        children: [
+          {
+            path: "info",
+            element: <PersonalInfo />,
+          },
+          {
+            path: "files",
+            element: <Files />,
+          },
+        ],
       },
     ],
   },

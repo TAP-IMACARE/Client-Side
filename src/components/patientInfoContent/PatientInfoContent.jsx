@@ -1,9 +1,9 @@
 import "./PatientInfoContent.css";
 import { Link } from "react-router-dom";
-import patientInfoImg from "../../assets/LandingPage assets/patientInfo.png";
-import PatientAppointmentScheduling from "../PatientAppointmentScheduling/PatientAppointmentScheduling";
-import PatientCommunication from "../PatientComm/PatientCommunication";
-import PatnersContent from "../PatnersContent/PatnersContent";
+import patientInfoImg from "../../assets/landingPageAssets/patientInfo.png";
+import PatientAppointmentScheduling from "../patientAppointmentScheduling/PatientAppointmentScheduling";
+import PatientCommunication from "../patientComm/PatientCommunication";
+import PatnersContent from "../patnersContent/PatnersContent";
 
 const PatientInfoContent = () => {
   return (
