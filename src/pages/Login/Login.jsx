@@ -14,6 +14,7 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
+  const [remember, setRemember] = useState("");
 
   const [visible, setVisible] = useState(false);
   const navigate = useNavigate();
@@ -30,9 +31,13 @@ const Login = () => {
       navigate("/dashboard");
     } else if (email === "" && password === "") {
       alert("All fields must be filled..!");
+
       return false;
     } else {
       alert("wrong details....!");
+      setEmail("");
+      setPassword("");
+      setRemember("");
       return false;
     }
   };
@@ -90,7 +95,12 @@ const Login = () => {
           </p>
           <div className="login-reminder">
             <div className="login-check-box">
-              <input type="checkbox" id="login-remember" />
+              <input
+                type="checkbox"
+                id="login-remember"
+                value={remember}
+                onChange={(e) => setRemember(e.target.checked)}
+              />
               <label htmlFor="remember" id="login-check-boxs">
                 Remember Me
               </label>
@@ -105,7 +115,7 @@ const Login = () => {
               <hr></hr>
             </span>
           </div>
-          <button id="login-google-signin">
+          <button id="login-google-signin" disabled>
             <img src={GoogleImg} />
             Sign in with google
           </button>
