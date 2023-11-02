@@ -28,8 +28,11 @@ const Login = () => {
 
     if (email === "Tosin@gmail.com" && password === "imacare") {
       navigate("/dashboard");
+    } else if (email === "" && password === "") {
+      alert("All fields must be filled..!");
+      return false;
     } else {
-      alert("wrong details");
+      alert("wrong details....!");
       return false;
     }
   };
