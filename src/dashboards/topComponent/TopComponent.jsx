@@ -3,7 +3,7 @@ import "./TopComponent.css";
 
 /* eslint-disable react/prop-types */
 const TopComponent = ({ header }) => {
-  const day = format(new Date(), "d");
+  const day = format(new Date(), "dd");
   const month = format(new Date(), "MMMM");
   const year = format(new Date(), "yyyy");
   const time = format(new Date(), "h:mm aaa");
