@@ -1,6 +1,6 @@
 .whyUs-container {
   background-color: var(--lightest-green);
-  min-height: 853px;
+  min-height: 950px;
 
   display: flex;
   flex-direction: column;
@@ -30,11 +30,13 @@
   margin-top: 70px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 13%;
+  gap: 80px;
 }
 .whyUs-left {
   margin-top: 30px;
-  width: 50%;
+  max-width: 50%;
 }
 .whyUs-left-activeContent {
   max-width: 400px;
@@ -98,6 +100,7 @@
 .whyUs-right img {
   width: 100%;
   height: 100%;
+  height: 280px;
 }
 
 /* small laptops */
