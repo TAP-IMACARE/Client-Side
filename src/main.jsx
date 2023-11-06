@@ -23,6 +23,7 @@ import Wallet from "./dashboards/payments/Wallet.jsx";
 import MakePayment from "./dashboards/payments/MakePayment.jsx";
 import PersonalInfo from "./dashboards/settings/PersonalInfo.jsx";
 import Files from "./dashboards/settings/Files.jsx";
+import ChangePassword from "./dashboards/settings/ChangePassword.jsx";
 
 const router = createBrowserRouter([
   {
@@ -102,6 +103,10 @@ const router = createBrowserRouter([
           {
             path: "files",
             element: <Files />,
+          },
+          {
+            path: "change_password",
+            element: <ChangePassword />,
           },
         ],
       },
