@@ -1,7 +1,7 @@
 import TopComponent from "../topComponent/TopComponent";
 import "./Settings.css";
 
-import { Link, NavLink, Outlet } from "react-router-dom";
+import { NavLink, Outlet } from "react-router-dom";
 
 const Settings = () => {
   return (
@@ -20,9 +20,9 @@ const Settings = () => {
             <NavLink to={"files"}>
               <li>Attached Files</li>
             </NavLink>
-            <Link to="files">
+            <NavLink to="change_password">
               <li>Change Password</li>
-            </Link>
+            </NavLink>
           </ul>
         </div>
       </div>
