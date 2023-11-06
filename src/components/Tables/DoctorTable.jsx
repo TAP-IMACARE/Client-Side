@@ -8,57 +8,58 @@ import { styled } from "@mui/material/styles";
 
 import img1 from "../../assets/dashboard assets/Ubong.svg";
 import img2 from "../../assets/dashboard assets/Chinedu.svg";
+import { useState } from "react";
 
 function createData(name, item1, item2, item3, item4) {
   return { name, item1, item2, item3, item4 };
 }
 
-const rows = [
-  createData(
-    <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
-      <img src={img1} alt="avatar" width={35} height={35} />
-      <span>Dr. Ubong Etuk</span>
-    </div>,
-    "Pathologist",
-    "July 19, 2023",
-    "10:00 am"
-  ),
-  createData(
-    <div
-      style={{
-        display: "flex",
-        alignItems: "center",
-        gap: "4px",
-        whiteSpace: "nowrap",
-      }}
-    >
-      <img src={img2} alt="avatar" width={35} height={35} />
-      <span>Dr. Chinedu Okeke</span>
-    </div>,
-    "Surgeon",
-    "July 20, 2023",
-    "12:00 pm"
-  ),
-  createData(
-    <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
-      <img src={img1} alt="avatar" width={35} height={35} />
-      <span>Dr. Ubong Etuk</span>
-    </div>,
-    "Pathologist",
-    "July 21, 2023",
-    "10:30 am"
-  ),
+// const rows = [
+//   createData(
+//     <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+//       <img src={img1} alt="avatar" width={35} height={35} />
+//       <span>Dr. Ubong Etuk</span>
+//     </div>,
+//     "Pathologist",
+//     "July 19, 2023",
+//     "10:00 am"
+//   ),
+//   createData(
+//     <div
+//       style={{
+//         display: "flex",
+//         alignItems: "center",
+//         gap: "4px",
+//         whiteSpace: "nowrap",
+//       }}
+//     >
+//       <img src={img2} alt="avatar" width={35} height={35} />
+//       <span>Dr. Chinedu Okeke</span>
+//     </div>,
+//     "Surgeon",
+//     "July 20, 2023",
+//     "12:00 pm"
+//   ),
+//   createData(
+//     <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+//       <img src={img1} alt="avatar" width={35} height={35} />
+//       <span>Dr. Ubong Etuk</span>
+//     </div>,
+//     "Pathologist",
+//     "July 21, 2023",
+//     "10:30 am"
+//   ),
 
-  createData(
-    <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
-      <img src={img1} alt="avatar" width={35} height={35} />
-      <span>Dr. Ubong Etuk</span>
-    </div>,
-    "Pathologist",
-    "July 19, 2023",
-    "10:00 am"
-  ),
-];
+//   createData(
+//     <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+//       <img src={img1} alt="avatar" width={35} height={35} />
+//       <span>Dr. Ubong Etuk</span>
+//     </div>,
+//     "Pathologist",
+//     "July 19, 2023",
+//     "10:00 am"
+//   ),
+// ];
 
 const StyledTableRow = styled(TableRow)(({ theme }) => ({
   "&:nth-of-type(odd)": {
@@ -71,6 +72,52 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 }));
 
 const DoctorTable = () => {
+  const [doctors, setDoctors] = useState([
+    createData(
+      <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+        <img src={img1} alt="avatar" width={35} height={35} />
+        <span>Dr. Ubong Etuk</span>
+      </div>,
+      "Pathologist",
+      "July 19, 2023",
+      "10:00 am"
+    ),
+    createData(
+      <div
+        style={{
+          display: "flex",
+          alignItems: "center",
+          gap: "4px",
+          whiteSpace: "nowrap",
+        }}
+      >
+        <img src={img2} alt="avatar" width={35} height={35} />
+        <span>Dr. Chinedu Okeke</span>
+      </div>,
+      "Surgeon",
+      "July 20, 2023",
+      "12:00 pm"
+    ),
+    createData(
+      <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+        <img src={img1} alt="avatar" width={35} height={35} />
+        <span>Dr. Ubong Etuk</span>
+      </div>,
+      "Pathologist",
+      "July 21, 2023",
+      "10:30 am"
+    ),
+
+    createData(
+      <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
+        <img src={img1} alt="avatar" width={35} height={35} />
+        <span>Dr. Ubong Etuk</span>
+      </div>,
+      "Pathologist",
+      "July 19, 2023",
+      "10:00 am"
+    ),
+  ]);
   return (
     <>
       <TableContainer>
@@ -84,7 +131,7 @@ const DoctorTable = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {rows.map((row, i) => (
+            {doctors.map((row, i) => (
               <StyledTableRow
                 key={i}
                 sx={{
