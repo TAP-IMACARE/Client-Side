@@ -60,7 +60,7 @@ const Login = () => {
             <div className="login-input-with-icon">
               <img src={MailImage} alt="Icon" className="login-icon" />
               <input
-                type="text"
+                type="mail"
                 placeholder="Enter your Email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
