@@ -27,7 +27,9 @@ const Login = () => {
   const handleValidate = (e) => {
     e.preventDefault();
 
-    if (email === "Tosin@gmail.com" && password === "imacare") {
+    // setEmail(email.toLowerCase());
+
+    if (email.toLowerCase() === "tosin@gmail.com" && password === "imacare") {
       navigate("/dashboard");
     } else if (email === "" && password === "") {
       alert("All fields must be filled..!");
