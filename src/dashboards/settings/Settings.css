@@ -1,4 +1,5 @@
 .settings-container {
+  max-width: 1300px;
   margin: 30px 40px;
   /* border: 0.5px solid var(--lighter-grey); */
   border-radius: 8px;
@@ -24,12 +25,34 @@
 #personalInfo .personal-pics {
   margin-top: 20px;
   margin-bottom: 20px;
-  width: 80px;
-  height: 80px;
+  width: 85px;
+  height: 85px;
+  position: relative;
 }
 #personalInfo .personal-pics img {
   width: 100%;
   height: 100%;
+}
+
+.personal-pics .camera-icon {
+  border: 4.303px solid var(--white);
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 0px;
+  bottom: -8px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: var(--green);
+}
+
+.personal-pics .camera-icon #cameraIcon {
+  height: 60%;
+  width: 60%;
 }
 #personalInfo label {
   font-size: 16px;
