@@ -1,7 +1,7 @@
 import React from "react";
 
 const ChangePassword = () => {
-  return <div>ChangePassword</div>;
+  return <div className="changePassword-container">ChangePassword</div>;
 };
 
 export default ChangePassword;
