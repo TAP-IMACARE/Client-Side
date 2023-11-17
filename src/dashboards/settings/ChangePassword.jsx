@@ -32,7 +32,7 @@ const ChangePassword = () => {
       setNewPassword("");
       setConfirmPassword("");
 
-      toast.success("Success");
+      toast.success("Changes saved");
     }
   };
 
