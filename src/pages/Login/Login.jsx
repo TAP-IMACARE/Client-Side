@@ -5,8 +5,8 @@ import GoogleImg from "../../assets/google-1.png";
 // import LockImg from "../../assets/lock.png";
 import MailImage from "../../assets/mail.png";
 import ErrorImg from "../../assets/error.png";
-import LoginVisImg from "../../assets/visibility_off.png";
 import lock from "../../assets/lock.svg";
+import LoginVisImg from "../../assets/visibility_off.png";
 import on from "../../assets/visibility_on.png";
 import { useState } from "react";
 
