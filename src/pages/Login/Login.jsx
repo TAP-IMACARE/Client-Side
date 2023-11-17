@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 import ImaImg from "../../assets/Imacare-5.png";
@@ -9,6 +10,9 @@ import lock from "../../assets/lock.svg";
 import LoginVisImg from "../../assets/visibility_off.png";
 import on from "../../assets/visibility_on.png";
 import { useState } from "react";
+
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -31,12 +35,13 @@ const Login = () => {
 
     if (email.toLowerCase() === "tosin@gmail.com" && password === "imacare") {
       navigate("/dashboard");
-    } else if (email === "" && password === "") {
-      alert("All fields must be filled..!");
+      toast.success("login successfull");
+    } else if (email === "" || password === "") {
+      toast.error("All fields must be filled..!");
 
       return false;
     } else {
-      alert("wrong details....!");
+      toast.error("wrong login....!");
       setEmail("");
       setPassword("");
       setRemember("");
@@ -46,6 +51,7 @@ const Login = () => {
 
   return (
     <div className="login-container">
+      <ToastContainer position="top-center" autoClose={2000} />
       {/* Div of the form */}
       <div className="login-leftContainer">
         {/* <h1>Hi, Welcome Back!</h1>
