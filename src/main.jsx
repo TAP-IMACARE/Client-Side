@@ -28,6 +28,8 @@ import MakePayment from "./dashboards/payments/MakePayment.jsx";
 import PersonalInfo from "./dashboards/settings/PersonalInfo.jsx";
 import Files from "./dashboards/settings/Files.jsx";
 import ChangePassword from "./dashboards/settings/ChangePassword.jsx";
+import Profile from "./dashboards/profile/Profile.jsx";
+import Chat from "./dashboards/chat/Chat.jsx";
 
 const router = createBrowserRouter([
   {
@@ -113,6 +115,14 @@ const router = createBrowserRouter([
             element: <ChangePassword />,
           },
         ],
+      },
+      {
+        path: "profile",
+        element: <Profile />,
+      },
+      {
+        path: "chat",
+        element: <Chat />,
       },
     ],
   },
