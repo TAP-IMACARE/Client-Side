@@ -2,13 +2,14 @@
 import React from "react";
 import "./Files.css";
 import FileTable from "../../components/Tables/FileTable";
+import Button from "../../components/Button/Button";
 
 const Files = () => {
   return (
     <div className="files-container">
       <FileTable />
 
-      <button>Add File</button>
+      <Button name={"Add File"} />
     </div>
   );
 };
