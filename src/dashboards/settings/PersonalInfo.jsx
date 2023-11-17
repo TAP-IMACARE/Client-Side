@@ -27,7 +27,7 @@ const PersonalInfo = () => {
         <div className="name-control">
           <div className="firstName">
             <label htmlFor="firstName">First Name</label> <br />
-            <input type="text" id="input" placeholder="Tosin" />
+            <input type="text" id="firstName" placeholder="Tosin" />
             <img src={contactIcon} alt="" id="icon" />
           </div>
 
