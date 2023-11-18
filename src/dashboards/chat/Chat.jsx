@@ -7,7 +7,9 @@ const Chat = () => {
   return (
     <>
       <TopComponent header={"Chats"} />
-      Chat
+      <div className="chat-container">
+        <p>Still in progress...!!</p>
+      </div>
     </>
   );
 };
