@@ -13,9 +13,12 @@ import BtypeIcon from "../../assets/dashboard assets/bloodtype.svg";
 import heightIcon from "../../assets/dashboard assets/height.svg";
 
 const PersonalInfo = () => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
-      <form action="#" id="personalInfo">
+      <form action="#" id="personalInfo" onSubmit={handleSubmit}>
         <h3>Personal Information</h3>
         <div className="personal-pics">
           <img src={userIcon} alt="avatar" id="userAvatar" />
@@ -40,7 +43,7 @@ const PersonalInfo = () => {
         <div className="phone-control">
           <label htmlFor="phone">Phone Number</label>
           <br />
-          <input type="number" id="phone" placeholder="Phone number" />{" "}
+          <input type="number" id="phone" placeholder="Phone number" />
           <img src={callIcon} alt="" id="icon" />
         </div>
         <div className="email-control">
