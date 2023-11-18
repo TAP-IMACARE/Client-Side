@@ -1,0 +1,15 @@
+// eslint-disable-next-line no-unused-vars
+import React from "react";
+import "./Chat.css";
+import TopComponent from "../topComponent/TopComponent";
+
+const Chat = () => {
+  return (
+    <>
+      <TopComponent header={"Chats"} />
+      Chat
+    </>
+  );
+};
+
+export default Chat;
