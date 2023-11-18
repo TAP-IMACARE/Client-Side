@@ -13,7 +13,9 @@ import activePayment from "../../assets/dashboard assets/activePayment.svg";
 import settingsIcon from "../../assets/dashboard assets/settings-icon.svg";
 import activeSettings from "../../assets/dashboard assets/activeSettings.svg";
 import chatIcon from "../../assets/dashboard assets/chat-icon.svg";
+import activeChatIcon from "../../assets/dashboard assets/activeChatIcon.svg";
 import profileIcon from "../../assets/dashboard assets/profile-icon.svg";
+import activeProfileIcon from "../../assets/dashboard assets/activeProfileIcon.svg";
 import helpIcon from "../../assets/dashboard assets/help-icon.svg";
 import logoutIcon from "../../assets/dashboard assets/logout-icon.svg";
 import { Link, useLocation } from "react-router-dom";
@@ -101,17 +103,26 @@ const Sidebar = () => {
             Settings
           </CustomNav>
           <hr className="sidebar-hr" color="" />
+
           <li className="sidebar-mid">
-            <img src={chatIcon} alt="icon" />
-            Chat
-            <div className="chats">
-              <p>15</p>
-            </div>
+            <CustomNav
+              to={"/dashboard/chat"}
+              activeIcon={activeChatIcon}
+              inactiveIcon={chatIcon}
+            >
+              Chat
+              <div className="chats">
+                <p>15</p>
+              </div>
+            </CustomNav>
           </li>
-          <li>
-            <img src={profileIcon} alt="icon" />
+          <CustomNav
+            to={"/dashboard/profile"}
+            activeIcon={activeProfileIcon}
+            inactiveIcon={profileIcon}
+          >
             Profile
-          </li>
+          </CustomNav>
           <li className="sidebar-bottom">
             <img src={helpIcon} alt="icon" />
             Help
