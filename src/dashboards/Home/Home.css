@@ -15,4 +15,6 @@
   position: relative;
   width: calc(100% - 300px);
   overflow-y: auto;
+
+  max-width: 1400px;
 }
