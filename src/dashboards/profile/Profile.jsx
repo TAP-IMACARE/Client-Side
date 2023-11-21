@@ -4,6 +4,8 @@ import "./Profile.css";
 import TopComponent from "../topComponent/TopComponent";
 
 import userIcon from "../../assets/dashboard assets/Tosin Wale.svg";
+import rightArrow from "../../assets/dashboard assets/rightArrow-icon.svg";
+import leftArrow from "../../assets/dashboard assets/leftArrow-icon.svg";
 
 const Profile = () => {
   return (
@@ -70,6 +72,23 @@ const Profile = () => {
               <div>
                 <p>Address</p>
                 <h6>18. Park Villa, Asokoro, F.C.T, Nigeria</h6>
+              </div>
+            </div>
+          </div>
+
+          <div className="profile-rightCard-container">
+            <div className="diagnoses">
+              <div className="diagnoses-header">
+                <h3>Diagnoses</h3>
+
+                <div className="diagnoses-icon">
+                  <div>
+                    <img src={leftArrow} alt="icon" />
+                  </div>
+                  <div>
+                    <img src={rightArrow} alt="icon" />
+                  </div>
+                </div>
               </div>
             </div>
           </div>
