@@ -6,8 +6,29 @@ import TopComponent from "../topComponent/TopComponent";
 import userIcon from "../../assets/dashboard assets/Tosin Wale.svg";
 import rightArrow from "../../assets/dashboard assets/rightArrow-icon.svg";
 import leftArrow from "../../assets/dashboard assets/leftArrow-icon.svg";
+import bloodPressureICon from "../../assets/dashboard assets/bloodPressure-icon.svg";
+import heartIcon from "../../assets/dashboard assets/heart-icon.svg";
+import stomachICon from "../../assets/dashboard assets/stomach-icon.svg";
 
 const Profile = () => {
+  const diagnosisData = [
+    {
+      icon: bloodPressureICon,
+      diagnosis: "Blood Pressure",
+      date: "14 July, 2023",
+    },
+    {
+      icon: heartIcon,
+      diagnosis: "Stomach Ache",
+      date: "1 August, 2023",
+    },
+    {
+      icon: stomachICon,
+      diagnosis: "Pneumonia",
+      date: "20 September, 2023",
+    },
+  ];
+
   return (
     <>
       <TopComponent header={"Profile Information"} />
@@ -82,13 +103,30 @@ const Profile = () => {
                 <h3>Diagnoses</h3>
 
                 <div className="diagnoses-icon">
-                  <div>
+                  <div className="diagnosesLeftIcon">
                     <img src={leftArrow} alt="icon" />
                   </div>
-                  <div>
+                  <div className="diagnosesReftIcon">
                     <img src={rightArrow} alt="icon" />
                   </div>
                 </div>
+              </div>
+
+              <div className="diagnoses-list">
+                {diagnosisData.map((data, index) => (
+                  <div key={index}>
+                    <div id="diagnoses">
+                      <div className="diagnoses-icon">
+                        <img src={data.icon} alt="icon" />
+                      </div>
+
+                      <div className="diagnoses-details">
+                        <h6>{data.diagnosis}</h6>
+                        <p>{data.date}</p>
+                      </div>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
