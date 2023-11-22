@@ -104,7 +104,7 @@ const Sidebar = () => {
           </CustomNav>
           <hr className="sidebar-hr" color="" />
 
-          <li className="sidebar-mid">
+          <div className="sidebar-mid">
             <CustomNav
               to={"/dashboard/chat"}
               activeIcon={activeChatIcon}
@@ -115,7 +115,7 @@ const Sidebar = () => {
                 <p>15</p>
               </div>
             </CustomNav>
-          </li>
+          </div>
           <CustomNav
             to={"/dashboard/profile"}
             activeIcon={activeProfileIcon}
