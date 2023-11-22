@@ -49,6 +49,9 @@
   font-size: 16px;
   color: var(--grey);
 }
+.login-form-group input:focus-within {
+  border: 1px solid var(--green);
+}
 .login-input-with-icon {
   position: relative;
 }
