@@ -38,7 +38,6 @@ const Login = () => {
       toast.success("login successfull");
     } else if (email === "" || password === "") {
       toast.error("All fields must be filled..!");
-
       return false;
     } else {
       toast.error("wrong login....!");
