@@ -9,6 +9,7 @@ import { styled } from "@mui/material/styles";
 import img1 from "../../assets/dashboard assets/Ubong.svg";
 import img2 from "../../assets/dashboard assets/Chinedu.svg";
 import { useState } from "react";
+import { Avatar, Grid } from "@mui/material";
 
 function createData(name, item1, item2, item3, item4) {
   return { name, item1, item2, item3, item4 };
@@ -72,52 +73,36 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
 }));
 
 const DoctorTable = () => {
-  const [doctors, setDoctors] = useState([
-    createData(
-      <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
-        <img src={img1} alt="avatar" width={35} height={35} />
-        <span>Dr. Ubong Etuk</span>
-      </div>,
-      "Pathologist",
-      "July 19, 2023",
-      "10:00 am"
-    ),
-    createData(
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "4px",
-          whiteSpace: "nowrap",
-        }}
-      >
-        <img src={img2} alt="avatar" width={35} height={35} />
-        <span>Dr. Chinedu Okeke</span>
-      </div>,
-      "Surgeon",
-      "July 20, 2023",
-      "12:00 pm"
-    ),
-    createData(
-      <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
-        <img src={img1} alt="avatar" width={35} height={35} />
-        <span>Dr. Ubong Etuk</span>
-      </div>,
-      "Pathologist",
-      "July 21, 2023",
-      "10:30 am"
-    ),
-
-    createData(
-      <div style={{ display: "flex", alignItems: "center", gap: "4px" }}>
-        <img src={img1} alt="avatar" width={35} height={35} />
-        <span>Dr. Ubong Etuk</span>
-      </div>,
-      "Pathologist",
-      "July 19, 2023",
-      "10:00 am"
-    ),
-  ]);
+  const appointmentData = [
+    {
+      avatar: img1,
+      name: "Dr. Ubong Etuk",
+      portfolio: "Pathologist",
+      date: "July 19, 2023",
+      time: "10:00 am",
+    },
+    {
+      avatar: img2,
+      name: "Dr. Chinedu Okeke",
+      portfolio: "Surgeon",
+      date: "July 20, 2023",
+      time: "12:00 pm",
+    },
+    {
+      avatar: img1,
+      name: "Dr. Ubong Etuk",
+      portfolio: "Pathologist",
+      date: "July 21, 2023",
+      time: "10:30 am",
+    },
+    {
+      avatar: img2,
+      name: "Dr. Chinedu Okeke",
+      portfolio: "Surgeon",
+      date: "July 19, 2023",
+      time: "10:00 am",
+    },
+  ];
   return (
     <>
       <TableContainer>
@@ -131,7 +116,7 @@ const DoctorTable = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {doctors.map((row, i) => (
+            {appointmentData.map((data, i) => (
               <StyledTableRow
                 key={i}
                 sx={{
@@ -140,12 +125,17 @@ const DoctorTable = () => {
                 }}
               >
                 <TableCell component="th" scope="row">
-                  {row.name}
+                  <Grid container alignItems={"center"} spacing={1}>
+                    <Grid item>
+                      <Avatar alt={data.name} src={data.avatar} />
+                    </Grid>
+                    <Grid item>{data.name}</Grid>
+                  </Grid>
                 </TableCell>
-                <TableCell>{row.item1}</TableCell>
-                <TableCell>{row.item2}</TableCell>
-                <TableCell>{row.item3}</TableCell>
-                <TableCell>{row.item4}</TableCell>
+                <TableCell>{data.portfolio}</TableCell>
+                <TableCell>{data.date}</TableCell>
+                <TableCell>{data.time}</TableCell>
+                {/* <TableCell>{row.item4}</TableCell> */}
               </StyledTableRow>
             ))}
           </TableBody>
