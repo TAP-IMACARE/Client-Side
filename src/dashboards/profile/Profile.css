@@ -33,12 +33,14 @@
   /* align-items: center; */
 }
 /* LEFT */
-
-.profile-leftCard {
+.profile-leftCard-container {
   flex: 1;
-  padding: 30px 30px 40px 30px;
   max-width: 500px;
-  border-radius: 8px;
+}
+.profile-leftCard {
+  padding: 30px 30px 40px 30px;
+
+  border-radius: 6px;
   border: 0.5px solid var(--lighter-grey);
   background: var(--white);
   box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
@@ -65,7 +67,32 @@
   font-size: 14px;
   color: var(--grey);
 }
-
+/* LEFT BOTTOM */
+.profile-leftCard-bottom {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.profile-leftCard-bottom #leftButtom-card {
+  padding: 20px 30px;
+  border-radius: 6px;
+  border: 0.5px solid var(--lighter-grey);
+  background: var(--white);
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+}
+.profile-leftCard-bottom #leftButtom-card h6 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+.profile-leftCard-bottom #leftButtom-card p {
+  font-size: 14px;
+  color: var(--black);
+}
+.profile-leftCard-bottom #leftButtom-card span {
+  font-size: 14px;
+  color: var(--grey);
+}
 /* RIGHT */
 .profile-rightCard-container {
   flex: 1;
@@ -73,8 +100,9 @@
 }
 
 .profile-rightCard-container .diagnoses {
-  padding: 30px 30px 35px 30px;
-  border-radius: 10px;
+  padding: 30px 30px 30px 30px;
+
+  border-radius: 6px;
   border: 0.5px solid var(--lighter-grey);
   background: var(--white);
 }
@@ -120,9 +148,9 @@
 .profile-rightCard-container #diagnoses {
   margin-top: 20px;
   height: 170px;
-  width: 145px;
+  width: 140px;
   padding: 30px 20px;
-  border-radius: 8px;
+  border-radius: 6px;
   background: var(--white);
 
   box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
@@ -153,4 +181,54 @@
 .profile-rightCard-container #diagnoses p {
   font-size: 12px;
   white-space: nowrap;
+}
+
+/* RIGH_BOTTOM */
+.systolic-Analysis {
+  margin-top: 20px;
+  padding: 30px;
+
+  border-radius: 6px;
+  border: 0.5px solid var(--lighter-grey);
+  background: var(--white);
+}
+.systolic-Analysis-content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 450px;
+}
+
+.systolic-AnalysisCard-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+#systolic-AnalysisCard {
+  padding: 15px 10px;
+
+  margin-top: 40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  border: 0.5px solid var(--lighter-grey);
+  background: var(--white);
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+}
+#systolic-AnalysisCard h6 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--black);
+}
+#systolic-AnalysisCard span {
+  font-size: 14px;
+  color: var(--grey);
+}
+#systolic-AnalysisCard p {
+  font-size: 14px;
+  color: var(--grey);
 }
