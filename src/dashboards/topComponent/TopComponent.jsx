@@ -6,7 +6,7 @@ const TopComponent = ({ header }) => {
   const day = format(new Date(), "dd");
   const month = format(new Date(), "MMMM");
   const year = format(new Date(), "yyyy");
-  const time = format(new Date(), "h:mm aaa");
+  const time = format(new Date(), "hh:mm aaa");
 
   return (
     <div className="home-dashbord-top">
