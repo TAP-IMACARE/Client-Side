@@ -10,7 +10,7 @@ import bloodPressureICon from "../../assets/dashboard assets/bloodPressure-icon.
 import heartIcon from "../../assets/dashboard assets/heart-icon.svg";
 import stomachICon from "../../assets/dashboard assets/stomach-icon.svg";
 
-import chart from "../../assets/dashboard assets/chart.png";
+import chartIMG from "../../assets/dashboard assets/chart.png";
 import favorite from "../../assets/dashboard assets/favorite.svg";
 
 const Profile = () => {
@@ -201,7 +201,7 @@ const Profile = () => {
 
               <div className="systolic-Analysis-content">
                 <div className="systolic-AnalysisChart">
-                  <img src={chart} alt="chart" />
+                  <img src={chartIMG} alt="chart" />
                 </div>
 
                 <div className="systolic-AnalysisCard-container">
