@@ -10,7 +10,7 @@ import bloodPressureICon from "../../assets/dashboard assets/bloodPressure-icon.
 import heartIcon from "../../assets/dashboard assets/heart-icon.svg";
 import stomachICon from "../../assets/dashboard assets/stomach-icon.svg";
 
-import chartIMG from "../../assets/dashboard assets/chart.png";
+import chartIMG from "../../assets/dashboard assets/chart.PNG";
 import favorite from "../../assets/dashboard assets/favorite.svg";
 
 const Profile = () => {
