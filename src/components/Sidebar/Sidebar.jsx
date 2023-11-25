@@ -106,7 +106,7 @@ const Sidebar = () => {
 
           <div className="sidebar-mid">
             <CustomNav
-              to={"/dashboard/chat"}
+              // to={"/dashboard/chat"}
               activeIcon={activeChatIcon}
               inactiveIcon={chatIcon}
             >
