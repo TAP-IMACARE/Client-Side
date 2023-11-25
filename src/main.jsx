@@ -120,10 +120,10 @@ const router = createBrowserRouter([
         path: "profile",
         element: <Profile />,
       },
-      {
-        path: "chat",
-        element: <Chat />,
-      },
+      // {
+      //   path: "chat",
+      //   element: <Chat />,
+      // },
     ],
   },
 ]);
