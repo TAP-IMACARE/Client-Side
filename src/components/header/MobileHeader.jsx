@@ -92,13 +92,13 @@ const MobileHeader = ({ hamburger, setHamburger }) => {
                   <span>Why IMACARE</span>
                 </li>
               </LinkRoll>
-              <Link to={"#"}>
+              <Link to={"/login"}>
                 <li>
                   <img src={loginIcon} alt="icon" />
                   <span>Log in</span>
                 </li>
               </Link>
-              <Link to={"#"}>
+              <Link to={"/login"}>
                 <li>
                   <img src={signupIcon} alt="icon" />
                   <span>Get Started</span>
