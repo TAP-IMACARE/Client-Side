@@ -25,6 +25,7 @@ const CustomNav = ({ to, children, activeIcon, inactiveIcon }) => {
   const { pathname } = useLocation();
   const isActive = useMemo(() => {
     let link = to;
+    // console.log("link :", to);
     const routeList = to.split("/").filter(Boolean);
     const pathList = pathname.split("/").filter(Boolean);
     // console.log(routeList);
@@ -106,7 +107,7 @@ const Sidebar = () => {
 
           <div className="sidebar-mid">
             <CustomNav
-              // to={"/dashboard/chat"}
+              to={"/dashboard/chat"}
               activeIcon={activeChatIcon}
               inactiveIcon={chatIcon}
             >
