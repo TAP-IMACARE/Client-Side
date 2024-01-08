@@ -12,8 +12,6 @@
 }
 
 .appointment-nav .appointment-items {
-  /* font-size: 18px;
-  color: var(--lighter-grey); */
   cursor: pointer;
 }
 .appointment-nav a {
@@ -39,7 +37,6 @@
 
   border-radius: 8.899px;
   border: 0.5px solid var(--lighter-grey);
-  /* height: 340px; */
   width: 295px;
 }
 .appointment-card h5 {
