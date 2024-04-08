@@ -13,7 +13,7 @@ const Hero = () => {
             Amplify Care
           </h1>
           <p>Your trusted hospital service provider</p>
-          <Link to="#" id="hero-explore">
+          <Link to={"/login"} id="hero-explore">
             <span>Explore Now</span>
           </Link>
         </div>
