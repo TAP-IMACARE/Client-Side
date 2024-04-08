@@ -89,7 +89,7 @@ const Header = () => {
               <Link to={"/login"} id="login">
                 Log in
               </Link>
-              <Link to={"#"} id="getStarted">
+              <Link to={"/login"} id="getStarted">
                 Get Started
               </Link>
             </div>
