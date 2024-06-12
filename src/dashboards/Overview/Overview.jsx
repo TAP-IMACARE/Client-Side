@@ -13,8 +13,14 @@ import Calendar from "../../components/calender/Calender";
 import TopComponent from "../topComponent/TopComponent";
 import DoctorTable from "../../components/Tables/DoctorTable";
 import "./Overview.css";
+import { useNavigate } from "react-router-dom";
 
 const Overview = () => {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate("/dashboard/book-appointment");
+  };
   return (
     <div>
       <TopComponent header={"Hi Tosin, Welcome!"} />
@@ -22,7 +28,7 @@ const Overview = () => {
         {/* LEFT COMPONENTS */}
         <div className="home-dasboard-left">
           <div className="schedule-container">
-            <div className="schedule-app">
+            <div className="schedule-app" onClick={() => handleNavigate()}>
               <div className="schedule-app-icon">
                 <img src={addIcon} alt="icon" />
               </div>

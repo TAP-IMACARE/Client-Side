@@ -3,7 +3,8 @@
   justify-content: space-between;
   align-items: center;
   height: 50px;
-  padding: 20px 45px 20px 40px;
+  max-width: 1440px;
+  padding: 35px 45px 25px 40px;
   margin-bottom: 20px;
 }
 .home-dashbord-top h3 {
@@ -15,8 +16,11 @@
   justify-content: center;
   align-items: center;
   gap: 30px;
-  width: 180px;
+  min-width: 180px;
   height: 35px;
+  padding: 8px;
+  font-size: 14px;
+  color: var(--black);
 
   border-radius: 4px;
   border: 0.5px solid var(--lighter-grey);

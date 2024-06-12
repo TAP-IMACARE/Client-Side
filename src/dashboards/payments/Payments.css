@@ -1,0 +1,103 @@
+.payments-container {
+  margin: 30px 30px;
+  /* border: 0.5px solid var(--lighter-grey); */
+  border-radius: 8px;
+  min-height: 100vh;
+}
+
+.payments-container .payments-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 55px;
+}
+
+.payments-tabs .tab {
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 2.13498px 7.47241px 18.14729px 0px rgba(0, 94, 93, 0.09);
+  /* margin: 30px 20px; */
+  padding: 40px 30px;
+  width: 250px;
+  height: 100px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+}
+
+.payments-tabs .balance-icon {
+  padding: 20px;
+  border-radius: 50%;
+  background: var(--light-blue, #bfe6f6);
+}
+
+.payments-tabs .debt-icon {
+  padding: 20px;
+  border-radius: 50%;
+  background: var(--light-red, #ffd6d6);
+}
+.payments-tabs .total-icon {
+  padding: 20px;
+  border-radius: 50%;
+  background: var(--light-green, #d3efd9);
+}
+
+.payments-tabs .tab img {
+  width: 25.357px;
+  height: 18.442px;
+}
+
+.payments-tabs p {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.payments-nav {
+  margin-top: 25px;
+  display: flex;
+  gap: 20px;
+}
+.payments-nav a {
+  color: var(--green);
+}
+
+/* .payments-nav .active {
+  color: var(--white);
+  background-color: var(--green);
+  border-radius: 8px;
+  border: none;
+} */
+
+.payments-nav li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  width: 140px;
+  height: 40px;
+  font-size: 14px;
+  /* padding: 6.825px 38.389px; */
+  border-radius: 8px;
+  border: 1px solid var(--green);
+  background: var(--white);
+
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.payments-nav li:hover {
+  color: var(--white);
+  background-color: var(--green);
+  border-radius: 8px;
+  border: none;
+}
+
+.payments-table {
+  margin-top: 25px;
+  /* padding: 0px 20px; */
+  border-radius: 10px;
+  /* border: 0.5px solid var(--lighter-grey); */
+  background: var(--white);
+  min-height: 500px;
+}

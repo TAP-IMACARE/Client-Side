@@ -1,5 +1,8 @@
 .home-container {
   display: flex;
+
+  /* Same as dashboard nav height */
+  margin-top: 60px;
 }
 
 .home-dashboard {
@@ -12,4 +15,6 @@
   position: relative;
   width: calc(100% - 300px);
   overflow-y: auto;
+
+  max-width: 1400px;
 }

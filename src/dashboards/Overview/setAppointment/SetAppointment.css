@@ -1,0 +1,135 @@
+.SetAppointment-container {
+  padding: 30px 30px;
+  min-height: 100vh;
+}
+
+.SetAppointment-wrapper {
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.SetAppointment-leftCOmponent img {
+  width: 255px;
+  height: 250px;
+}
+
+.SetAppointment-doc-portfolio {
+  margin-top: 30px;
+}
+
+.SetAppointment-doc-portfolio h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.SetAppointment-doc-portfolio p {
+  margin-top: 5px;
+  font-size: 16px;
+  color: var(--grey);
+}
+.SetAppointment-doc-portfolio h6 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+.SetAppointment-doc-portfolio .portfolio-text {
+  font-size: 14px;
+  max-width: 310px;
+}
+/* RIGHT COMPONENT */
+
+.SetAppointment-rightCOmponent {
+}
+
+.SetAppointment-rightCOmponent .calender-wrapper2 {
+  border-radius: 8px;
+  /* background: var(--white, #fff); */
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+  margin-bottom: 25px;
+}
+
+.SetAppointment-rightCOmponent label {
+  font-size: 16px;
+  font-weight: 500;
+
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.SetAppointment-rightCOmponent .SetAppointment-radioBTN {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+.SetAppointment-radioBTN .virtual,
+.physical {
+  display: flex;
+  align-content: center;
+  gap: 8px;
+}
+.SetAppointment-radioBTN .virtual h6,
+.physical h6 {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* custom input */
+.SetAppointment-radioBTN .virtual input,
+.physical input {
+  position: relative;
+  appearance: none;
+
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: 0.2s all linear;
+
+  border: 1px solid var(--green);
+}
+
+.SetAppointment-radioBTN .virtual input:after,
+.physical input:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.SetAppointment-radioBTN .virtual input:checked::after,
+.physical input:checked::after {
+  display: block;
+}
+
+.SetAppointment-radioBTN .virtual input:after,
+.physical input:after {
+  top: 2px;
+  left: 2px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  transition: 10.4s all linear;
+  background-color: var(--green);
+}
+
+form button {
+  margin-top: 30px;
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 16px;
+  /* width: 162.337px;
+  width: 228.827px; */
+  padding: 12px 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* .ReactModal__Overlay {
+  opacity: 0.5;
+  transition: opacity 00.001s linear;
+}
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+} */

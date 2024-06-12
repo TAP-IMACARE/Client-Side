@@ -1,9 +1,9 @@
-import Header from "../components/Header/Header";
-import Hero from "../components/Hero/Hero";
-import PatientInfoContent from "../components/PatientInfoContent/PatientInfoContent";
-import WhyUs from "../components/WhyUs/WhyUs";
-import Footer from "../components/Footer/Footer";
-import Plans from "../components/Plans/Plans";
+import Header from "../components/header/Header";
+import Hero from "../components/hero/Hero";
+import PatientInfoContent from "../components/patientInfoContent/PatientInfoContent";
+import WhyUs from "../components/whyUs/WhyUs";
+import Footer from "../components/footer/Footer";
+import Plans from "../components/plans/Plans";
 
 const LandingPage = () => {
   return (
@@ -12,7 +12,7 @@ const LandingPage = () => {
       <Hero />
       <PatientInfoContent />
       <WhyUs />
-      {/* <Plans /> */}
+      <Plans />
       <Footer />
     </>
   );

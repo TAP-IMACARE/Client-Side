@@ -1,0 +1,234 @@
+.profile-container {
+  margin: 30px 20px;
+}
+
+.profile-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 20px;
+}
+.profile-top p {
+  font-size: 14px;
+}
+.profile-avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.profile-avatar img {
+  width: 80px;
+  height: 80px;
+}
+.profile-top .date {
+  text-align: end;
+}
+
+.profile-cards {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  /* align-items: center; */
+}
+/* LEFT */
+.profile-leftCard-container {
+  flex: 1;
+  max-width: 500px;
+}
+.profile-leftCard {
+  padding: 30px 30px 40px 30px;
+
+  border-radius: 6px;
+  border: 0.5px solid var(--lighter-grey);
+  background: var(--white);
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+}
+
+.profile-leftCard .info1 {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.profile-leftCard .info2 {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 40px;
+  border-bottom: 0.5px solid var(--lighter-grey);
+}
+
+.profile-leftCard h6 {
+  font-size: 14px;
+  font-weight: 500;
+}
+.profile-leftCard p {
+  font-size: 14px;
+  color: var(--grey);
+}
+/* LEFT BOTTOM */
+.profile-leftCard-bottom {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.profile-leftCard-bottom #leftButtom-card {
+  padding: 20px 30px;
+  border-radius: 6px;
+  border: 0.5px solid var(--lighter-grey);
+  background: var(--white);
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+}
+.profile-leftCard-bottom #leftButtom-card h6 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 8px;
+}
+.profile-leftCard-bottom #leftButtom-card p {
+  font-size: 14px;
+  color: var(--black);
+}
+.profile-leftCard-bottom #leftButtom-card span {
+  font-size: 14px;
+  color: var(--grey);
+}
+/* RIGHT */
+.profile-rightCard-container {
+  flex: 1;
+  max-width: 650px;
+}
+
+.profile-rightCard-container .diagnoses {
+  padding: 30px 30px 30px 30px;
+
+  border-radius: 6px;
+  border: 0.5px solid var(--lighter-grey);
+  background: var(--white);
+}
+
+.profile-rightCard-container .diagnoses-header {
+  display: flex;
+  justify-content: space-between;
+}
+.profile-rightCard-container .diagnoses-icon {
+  display: flex;
+  gap: 8px;
+}
+.profile-rightCard-container .diagnosesLeftIcon {
+  border-radius: 50%;
+  height: 20px;
+  width: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.595px solid var(--lighter-grey);
+  background: var(--white);
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+
+  cursor: pointer;
+}
+.profile-rightCard-container .diagnosesReftIcon {
+  border-radius: 50%;
+  height: 20px;
+  width: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0.595px solid var(--green);
+  background: var(--white);
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+
+  cursor: pointer;
+}
+.profile-rightCard-container .diagnoses-list {
+  display: flex;
+  gap: 16px;
+}
+.profile-rightCard-container #diagnoses {
+  margin-top: 20px;
+  height: 170px;
+  width: 140px;
+  padding: 30px 20px;
+  border-radius: 6px;
+  background: var(--white);
+
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+}
+.profile-rightCard-container #diagnoses .diagnoses-details {
+  margin-top: 20px;
+}
+
+.profile-rightCard-container #diagnoses .diagnoses-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background: var(--light-green);
+}
+
+.profile-rightCard-container #diagnoses .diagnoses-icon img {
+  width: 20px;
+}
+.profile-rightCard-container #diagnoses h6 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.profile-rightCard-container #diagnoses p {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+/* RIGH_BOTTOM */
+.systolic-Analysis {
+  margin-top: 20px;
+  padding: 30px;
+
+  border-radius: 6px;
+  border: 0.5px solid var(--lighter-grey);
+  background: var(--white);
+}
+.systolic-Analysis-content {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 450px;
+}
+
+.systolic-AnalysisCard-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+#systolic-AnalysisCard {
+  padding: 15px 10px;
+
+  margin-top: 40px;
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  border: 0.5px solid var(--lighter-grey);
+  background: var(--white);
+  box-shadow: 2px 7px 17px 0px rgba(0, 94, 93, 0.09);
+}
+#systolic-AnalysisCard h6 {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--black);
+}
+#systolic-AnalysisCard span {
+  font-size: 14px;
+  color: var(--grey);
+}
+#systolic-AnalysisCard p {
+  font-size: 14px;
+  color: var(--grey);
+}

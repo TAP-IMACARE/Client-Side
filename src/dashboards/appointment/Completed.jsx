@@ -23,6 +23,7 @@ const Completed = () => {
             <div className="date">
               <img src={scheduleIcon} alt="icon" />
               <span>5 days ago</span>
+              {console.log(2+2) }
             </div>
           </div>
 
